@@ -281,6 +281,13 @@ public class TorchLightListener implements Listener {
         plugin.getServer().getScheduler().runTaskLater(plugin, () -> {
             ItemStack held = player.getInventory().getItemInMainHand();
             Integer lightLevel = getLightLevel(held);
+            
+            // Kiểm tra tay phụ nếu tay chính không có
+            if (lightLevel == null || lightLevel == 0) {
+                ItemStack offhand = player.getInventory().getItemInOffHand();
+                lightLevel = getLightLevel(offhand);
+            }
+
             if (lightLevel != null && lightLevel > 0) {
                 updatePlayerLight(player, lightLevel);
             } else {

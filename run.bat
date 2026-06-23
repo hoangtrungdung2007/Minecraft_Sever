@@ -46,7 +46,7 @@ start "MinecraftServer" /B /wait /HIGH /affinity 0FFF %JAVA_PATH% ^
   -XX:MaxTenuringThreshold=1 ^
   -Dusing.aikars.flags=https://mcflags.emc.gs ^
   -Daikars.new.flags=true ^
-  -jar paper-1.21.4-232.jar ^
+  -jar paper-1.21.11-69.jar ^
   --nogui
 
 echo.

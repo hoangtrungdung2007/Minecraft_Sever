@@ -1,0 +1,56 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------< com.utilitytoolsplugin:UtilityTools >-----------------
+[INFO] Building UtilityTools 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ UtilityTools ---
+[INFO] Deleting d:\Minecraft\plugins\UtilityTools-src\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ UtilityTools ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ UtilityTools ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 19 source files with javac [debug target 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[166,63] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[167,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[168,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[169,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[170,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[171,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[172,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[173,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[WARNING] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/MinimapManager.java:[174,64] matchColor(int,int,int) in org.bukkit.map.MapPalette has been deprecated and marked for removal
+[INFO] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/HammerListener.java: Some input files use or override a deprecated API.
+[INFO] /d:/Minecraft/plugins/UtilityTools-src/src/main/java/com/utilitytoolsplugin/HammerListener.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ UtilityTools ---
+[INFO] skip non existing resourceDirectory d:\Minecraft\plugins\UtilityTools-src\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ UtilityTools ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ UtilityTools ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ UtilityTools ---
+[INFO] Building jar: d:\Minecraft\plugins\UtilityTools-src\target\UtilityTools-1.0.0.jar
+[INFO] 
+[INFO] --- shade:3.5.0:shade (default) @ UtilityTools ---
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing d:\Minecraft\plugins\UtilityTools-src\target\UtilityTools-1.0.0.jar with d:\Minecraft\plugins\UtilityTools-src\target\UtilityTools-1.0.0-shaded.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.302 s
+[INFO] Finished at: 2026-06-23T18:15:07+07:00
+[INFO] ------------------------------------------------------------------------

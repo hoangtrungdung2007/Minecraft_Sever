@@ -1,0 +1,67 @@
+name: UtilityTools
+version: 1.0.0
+main: com.utilitytoolsplugin.UtilityToolsPlugin
+api-version: '1.21'
+description: "Plugin tự viết với TreeCapitator, OreVeinMiner và Hammer 3x3"
+author: UtilityTools
+website: ""
+
+commands:
+  hammer:
+    description: "Quản lý Hammer 3x3"
+    usage: "/<command> [give|info] [player] [material]"
+    permission: utilitytoolsplugin.hammer
+    permission-message: "§cBạn không có quyền dùng lệnh này!"
+  shop:
+    description: "Mở cửa hàng"
+    usage: "/shop"
+  sell:
+    description: "Mở menu bán đồ"
+    usage: "/sell"
+  minimap:
+    description: "Bật/tắt bản đồ mini góc trái (off-hand)"
+    usage: "/minimap"
+  rtp:
+    description: "Teleport ngẫu nhiên đến Overworld hoặc Địa Ngục"
+    usage: "/rtp"
+  sethome:
+    description: "Đặt home tại vị trí hiện tại"
+    usage: "/sethome <tên>"
+  home:
+    description: "Teleport về home đã đặt"
+    usage: "/home <tên>"
+  delhome:
+    description: "Xóa home"
+    usage: "/delhome <tên>"
+  stats:
+    description: "Xem thống kê của người chơi"
+    usage: "/stats [tên]"
+  tpa:
+    description: "Dịch chuyển đến người chơi khác"
+    usage: "/tpa <tên>"
+  raid:
+    description: "Khởi động cuộc đột kích Boss"
+    usage: "/raid [stop]"
+    permission: utilitytoolsplugin.raid
+    permission-message: "§cChỉ Admin mới có thể dùng lệnh này!"
+
+permissions:
+  utilitytoolsplugin.hammer:
+    description: "Cho phép dùng lệnh /hammer"
+    default: op
+    
+  utilitytoolsplugin.treecapitator:
+    description: "Cho phép dùng TreeCapitator"
+    default: true
+    
+  utilitytoolsplugin.veinminer:
+    description: "Cho phép dùng OreVeinMiner"
+    default: true
+    
+  utilitytoolsplugin.hammer.use:
+    description: "Cho phép dùng Hammer 3x3"
+    default: true
+
+  utilitytoolsplugin.raid:
+    description: "Cho phép khởi động Raid Boss"
+    default: op

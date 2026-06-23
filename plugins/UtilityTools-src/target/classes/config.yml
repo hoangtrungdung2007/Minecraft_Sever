@@ -1,0 +1,38 @@
+# UtilityTools Configuration
+# Chỉnh sửa tùy theo nhu cầu của bạn
+
+tree-capitator:
+  # Bật/tắt tính năng TreeCapitator
+  enabled: true
+  # Số block gỗ tối đa (tránh lag)
+  max-blocks: 500
+  # Có chặt lá cây cùng không?
+  include-leaves: true
+  # Thông báo khi chặt cây
+  show-message: true
+
+ore-vein-miner:
+  # Bật/tắt tính năng OreVeinMiner
+  enabled: true
+  # Số quặng tối đa (1 stack = 64)
+  max-ores: 64
+  # Cần Shift để kích hoạt?
+  require-sneak: true
+  # Thông báo khi đào mạch quặng
+  show-message: true
+
+hammer:
+  # Bat/tat tinh nang Hammer 3x3
+  enabled: true
+  # Thong bao khi dung Hammer
+  show-message: false
+
+torch-light:
+  # Bat/tat tinh nang Duoc Sang (Dynamic Lighting)
+  enabled: true
+  # Kiem tra ca tay phu (offhand) khong?
+  check-offhand: true
+  # Tan suat cap nhat (tick) - cang nho cang min nhung ton tai nguyen hon
+  # Khuyen nghi: 3 (min nhat) den 10 (hieu nang tot nhat)
+  update-ticks: 3
+

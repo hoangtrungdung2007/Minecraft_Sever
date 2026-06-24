@@ -13,7 +13,7 @@ set MAVEN_HOME=D:\tools\maven\apache-maven-3.9.9
 set JAVA_HOME=D:\tools\jdk21\jdk-21.0.7+6
 set PATH=%JAVA_HOME%\bin;%MAVEN_HOME%\bin;%PATH%
 
-mvn -version >nul 2>&1
+call mvn -version >nul 2>&1
 if errorlevel 1 (
     echo [LOI] Khong tim thay Maven hoac Java tren o D:\tools!
     pause
@@ -38,8 +38,13 @@ echo.
 echo [OK] Build thanh cong!
 echo [..] Sao chep file JAR vao thu muc plugins...
 
-copy "target\UtilityTools-1.0.0.jar" "..\UtilityTools-1.0.0.jar" >nul
+if exist "..\UtilityTools-1.0.0.jar.old" del /F /Q "..\UtilityTools-1.0.0.jar.old" >nul 2>&1
+if exist "..\UtilityTools-1.0.0.jar" ren "..\UtilityTools-1.0.0.jar" UtilityTools-1.0.0.jar.old >nul 2>&1
+copy /Y "target\UtilityTools-1.0.0.jar" "..\UtilityTools-1.0.0.jar" >nul
 echo [OK] Da sao chep: plugins\UtilityTools-1.0.0.jar
+
+echo [..] Xoa cache cu trong .paper-remapped...
+if exist "..\.paper-remapped\UtilityTools-1.0.0.jar" del /f /q "..\.paper-remapped\UtilityTools-1.0.0.jar" >nul 2>&1
 
 echo.
 echo ============================================

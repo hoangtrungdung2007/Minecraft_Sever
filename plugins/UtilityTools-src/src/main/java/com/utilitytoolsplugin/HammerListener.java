@@ -14,6 +14,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
+import org.bukkit.enchantments.Enchantment;
 
 import java.util.*;
 
@@ -104,30 +105,11 @@ public class HammerListener implements Listener {
             }
         }
         
-        // Tiêu hao độ bền
-        ItemMeta meta = tool.getItemMeta();
-        if (meta instanceof Damageable damageable) {
-            int maxDurability = tool.getType().getMaxDurability();
-            int currentDamage = damageable.getDamage();
-            int durabilityUsed = breakableBlocks.size();
-            
-            // Phá tất cả block 3x3
-            for (Block block : breakableBlocks) {
-                block.breakNaturally(tool);
-            }
-            
-            // Cập nhật độ bền
-            int newDamage = currentDamage + durabilityUsed;
-            if (newDamage >= maxDurability) {
-                player.getInventory().setItemInMainHand(null);
-                player.getWorld().playSound(player.getLocation(),
-                    org.bukkit.Sound.ENTITY_ITEM_BREAK, 1.0f, 1.0f);
-                player.sendMessage("§c✖ Hammer của bạn đã bị vỡ!");
-            } else {
-                damageable.setDamage(newDamage);
-                tool.setItemMeta(meta);
-            }
+        // Phá tất cả block xung quanh (26 block còn lại không làm mất độ bền)
+        for (Block block : breakableBlocks) {
+            block.breakNaturally(tool);
         }
+        // Block chính (brokenBlock) sẽ tự động bị trừ 1 độ bền theo cơ chế gốc của Minecraft!
     }
     
     /**
@@ -228,11 +210,17 @@ public class HammerListener implements Listener {
             meta.setDisplayName("§6§lHammer §r§6(3x3x3)");
             
             List<String> lore = new ArrayList<>();
-            lore.add("§7Phá §fkhối 3x3x3 §7(26 block) cùng lúc");
-            lore.add("§7Tiêu hao §fđộ bền §7cho mỗi block");
+            lore.add("§7Phá §fkhối 3x3x3 §7(27 block) cùng lúc");
+            lore.add("§7Chỉ tiêu hao §f1 độ bền §7cho mỗi lần đào");
             lore.add("§8[UtilityTools Plugin]");
             meta.setLore(lore);
             
+            // Thêm Full Enchant xịn nhất
+            meta.addEnchant(Enchantment.EFFICIENCY, 5, true); // Hiệu suất V
+            meta.addEnchant(Enchantment.FORTUNE, 3, true); // Gia tài III
+            meta.addEnchant(Enchantment.UNBREAKING, 3, true); // Không phá vỡ III
+            meta.addEnchant(Enchantment.MENDING, 1, true); // Sửa chữa I
+
             // Đánh dấu NBT
             meta.getPersistentDataContainer().set(HAMMER_KEY, PersistentDataType.BYTE, (byte) 1);
             

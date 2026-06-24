@@ -1,164 +1,317 @@
-[13:54:00] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.7+6-LTS; Eclipse Adoptium Temurin-21.0.7+6) on Windows 11 10.0 (amd64)
-[13:54:00] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-69-main@94d0c97 (2025-12-30T20:33:30Z) for Minecraft 1.21.11
-[13:54:01] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[13:54:01] [ServerMain/INFO]: [FileProviderSource] The spark plugin will not be loaded as this server bundles the spark profiler.
-[13:54:01] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
-[13:54:01] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
+[16:38:02] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.7+6-LTS; Eclipse Adoptium Temurin-21.0.7+6) on Windows 11 10.0 (amd64)
+[16:38:02] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-69-main@94d0c97 (2025-12-30T20:33:30Z) for Minecraft 1.21.11
+[16:38:03] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:38:03] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Remapping plugin 'plugins\UtilityTools-1.0.0.jar'...
+[16:38:04] [Paper Plugin Remapper Thread - 2/INFO]: [PluginRemapper] Done remapping plugin 'plugins\UtilityTools-1.0.0.jar' in 332ms.
+[16:38:04] [ServerMain/INFO]: [FileProviderSource] The spark plugin will not be loaded as this server bundles the spark profiler.
+[16:38:04] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
+[16:38:04] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
  - Chunky (1.4.40), Geyser-Spigot (2.10.1-SNAPSHOT), UtilityTools (1.0.0), ViaVersion (5.10.1-SNAPSHOT), floodgate (2.2.5-SNAPSHOT (b134-963ae91))
-[13:54:06] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[13:54:07] [ServerMain/INFO]: Loaded 1470 recipes
-[13:54:07] [ServerMain/INFO]: Loaded 1584 advancements
-[13:54:08] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[13:54:08] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 296.1ms
-[13:54:08] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[13:54:08] [Server thread/INFO]: Loading properties
-[13:54:08] [Server thread/INFO]: This server is running Paper version 1.21.11-69-main@94d0c97 (2025-12-30T20:33:30Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[13:54:08] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[13:54:08] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[13:54:08] [Server thread/INFO]: Using 4 threads for Netty based IO
-[13:54:09] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[13:54:09] [Server thread/INFO]: Default game type: SURVIVAL
-[13:54:09] [Server thread/INFO]: Generating keypair
-[13:54:09] [Server thread/INFO]: Starting Minecraft server on *:25565
-[13:54:09] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[13:54:09] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[13:54:10] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b134-963ae91)
-[13:54:10] [Server thread/INFO]: [floodgate] Took 681ms to boot Floodgate
-[13:54:10] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.10.1-SNAPSHOT
-[13:54:10] [Server thread/INFO]: [ViaVersion] ViaVersion 5.10.1-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
-[13:54:11] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
-[13:54:11] [Server thread/INFO]: [UtilityTools] Loading server plugin UtilityTools v1.0.0
-[13:54:11] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.10.1-SNAPSHOT
-[13:54:11] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[13:54:11] [Server thread/INFO]: [Geyser-Spigot] Enabled extension EmoteOffhand
-[13:54:11] [Server thread/INFO]: [Geyser-Spigot] Loaded 1 extension(s)
-[13:54:11] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
-[13:54:11] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[13:54:11] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[13:54:11] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[13:54:11] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[13:54:11] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[13:54:11] [Server thread/INFO]: Preparing level "world"
-[13:54:12] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[13:54:12] [Server thread/INFO]: Preparing spawn area: 100%
-[13:54:12] [Server thread/INFO]: Prepared spawn area in 2 ms
-[13:54:12] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[13:54:12] [Server thread/INFO]: Prepared spawn area in 0 ms
-[13:54:12] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[13:54:12] [Server thread/INFO]: Prepared spawn area in 1 ms
-[13:54:12] [Server thread/INFO]: Done preparing level "world" (0.402s)
-[13:54:12] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b134-963ae91)
-[13:54:12] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.10.1-SNAPSHOT
-[13:54:12] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
-[13:54:12] [Server thread/INFO]: [UtilityTools] Enabling UtilityTools v1.0.0
-[13:54:12] [Server thread/INFO]: [UtilityTools] ===========================================
-[13:54:12] [Server thread/INFO]: [UtilityTools]  UtilityTools Plugin da khoi dong!
-[13:54:12] [Server thread/INFO]: [UtilityTools]  TreeCapitator: HOAT DONG
-[13:54:12] [Server thread/INFO]: [UtilityTools]  OreVeinMiner: HOAT DONG
-[13:54:12] [Server thread/INFO]: [UtilityTools]  Hammer 3x3: HOAT DONG
-[13:54:12] [Server thread/INFO]: [UtilityTools]  TorchLight (Duoc Sang): HOAT DONG
-[13:54:12] [Server thread/INFO]: [UtilityTools]  KingMC Features (Economy, Shop, Spawners): HOAT DONG
-[13:54:12] [Server thread/INFO]: [UtilityTools] ===========================================
-[13:54:12] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.10.1-SNAPSHOT
-[13:54:13] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
-[13:54:14] [Server thread/INFO]: [spark] Starting background profiler...
-[13:54:14] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[13:54:15] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[13:54:15] [Server thread/INFO]: [Geyser-Spigot] 
-[13:54:15] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.10.1-b1172 (git-master-4b27e6f)
-[13:54:15] [Server thread/INFO]: [Geyser-Spigot] 
-[13:54:15] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[13:54:18] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[13:54:18] [Server thread/INFO]: [Geyser-Spigot] [emoteoffhand] Loaded EmoteOffhand!
-[13:54:18] [Server thread/INFO]: [Geyser-Spigot] Done (2.981s)! Run /geyser help for help!
-[13:54:18] [Server thread/INFO]: Running delayed init tasks
-[13:54:18] [Server thread/INFO]: Done (18.917s)! For help, type "help"
-[13:54:18] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[13:54:18] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
-[13:55:52] [User Authenticator #0/INFO]: UUID of player trdung2007 is f2f18c50-dd1f-39a1-8d16-29ac615977d5
-[13:55:53] [Server thread/INFO]: trdung2007 joined the game
-[13:55:53] [Server thread/INFO]: trdung2007[/127.0.0.1:60574] logged in with entity id 127 at ([world]-4116.931377438288, 65.0, 1881.708301509672)
-[13:56:13] [Server thread/INFO]: trdung2007 issued server command: /home spawn
-[13:56:15] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/347, uuid='29888a54-c018-4307-8d1f-4e920b4f665a', l='ServerLevel[world]', x=-30.60, y=-14.00, z=12.40, cpos=[-2, 0], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
-[13:56:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/470, uuid='bf28773c-614c-4566-b4d7-489f0d45d50b', l='ServerLevel[world]', x=33.50, y=30.00, z=4.60, cpos=[2, 0], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
-[13:56:19] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/472, uuid='445831a0-7dd2-4ca4-b8cb-5db5642203bb', l='ServerLevel[world]', x=33.50, y=30.00, z=4.60, cpos=[2, 0], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
-[13:56:27] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/501, uuid='16ffd1e9-b45b-4514-97ed-e98e877abb83', l='ServerLevel[world]', x=-77.40, y=-22.00, z=20.40, cpos=[-5, 1], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
-[13:56:27] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/502, uuid='ed5d456e-fec5-4622-a2e9-19bd7ed0e1c9', l='ServerLevel[world]', x=-77.40, y=-22.00, z=20.40, cpos=[-5, 1], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
-[13:56:28] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/534, uuid='189c914b-8c05-461b-8848-a29150de2a08', l='ServerLevel[world]', x=73.50, y=47.00, z=102.60, cpos=[4, 6], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
-[13:56:59] [Server thread/INFO]: trdung2007 issued server command: /shop
-[13:57:06] [Server thread/INFO]: trdung2007 issued server command: /raid
-[13:57:06] [Server thread/INFO]: =================================
-[13:57:06] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
-[13:57:06] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
-[13:57:06] [Server thread/INFO]: X: 29, Y: 77, Z: 126
-[13:57:06] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
-[13:57:06] [Server thread/INFO]: =================================
-[13:58:23] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 4/200 ❤ ]'/344, uuid='72afe0e5-c19a-4d52-8e9c-cff49e1e5005', l='ServerLevel[world]', x=57.78, y=66.00, z=103.94, cpos=[3, 6], tl=2506, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 4/200 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
-[13:58:40] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 4/200 ❤ ]'/340, uuid='b784eda2-3258-4d7e-8ce4-a50f0a3fe17a', l='ServerLevel[world]', x=58.87, y=67.00, z=103.96, cpos=[3, 6], tl=2868, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 4/200 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
-[13:58:47] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
-[13:58:47] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 2/100 ❤ ]'/732, uuid='45079a8e-721b-4da5-b08c-bd13b538bf9d', l='ServerLevel[world]', x=36.90, y=66.00, z=111.28, cpos=[2, 6], tl=2023, v=true] died: ☠ Quỷ Vương Xương ☠ [ 2/100 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 182/200 ❤ ] using [Chùy Quỷ Dữ]
-[13:59:29] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
-[13:59:29] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 8/200 ❤ ]'/735, uuid='dee3f850-34d0-4d21-a88f-75556cc3d50d', l='ServerLevel[world]', x=30.92, y=68.00, z=86.06, cpos=[1, 5], tl=2860, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 8/200 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
-[13:59:46] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
-[13:59:46] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ]'/734, uuid='8be6d944-1dbb-41e4-aafc-ff4376071bef', l='ServerLevel[world]', x=36.00, y=68.00, z=85.26, cpos=[2, 5], tl=3201, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
-[14:00:10] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 1 Boss
-[14:00:10] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 16/200 ❤ ]'/733, uuid='4e7bfc7e-d5e2-483d-939b-03b32d59b481', l='ServerLevel[world]', x=31.24, y=66.00, z=64.31, cpos=[1, 4], tl=3674, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 16/200 ❤ ] was smashed by trdung2007 with [Chùy Quỷ Dữ]
-[14:00:52] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 1/200 ❤ ]'/263, uuid='a68710f6-a32b-415e-94d3-8d75e2bd890c', l='ServerLevel[world]', x=3.60, y=62.00, z=65.92, cpos=[0, 4], tl=5549, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 1/200 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
-[14:01:15] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/1599, uuid='2d5eb869-e578-4265-bd2b-c5e6fbbcfaf5', l='ServerLevel[world]', x=-23.60, y=54.00, z=171.50, cpos=[-2, 10], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
-[14:01:15] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/1602, uuid='bd5e71b3-0fb8-43cd-80f6-071d8f6a1e77', l='ServerLevel[world]', x=-23.60, y=54.00, z=171.50, cpos=[-2, 10], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
-[14:02:06] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 0 Boss
-[14:02:06] [Server thread/INFO]: =================================
-[14:02:06] [Server thread/INFO]: 🎉 CUỘC ĐỘT KÍCH ĐÃ BỊ ĐẨY LÙI 🎉
-[14:02:06] [Server thread/INFO]: Cả 5 Quỷ Vương đã bị tiêu diệt!
-[14:02:06] [Server thread/INFO]: =================================
-[14:02:06] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 1/200 ❤ ]'/731, uuid='073d541c-f29c-4f0a-a998-4bfa472a5993', l='ServerLevel[world]', x=78.24, y=70.00, z=161.36, cpos=[4, 10], tl=5997, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 1/200 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
-[14:02:34] [Server thread/INFO]: trdung2007 issued server command: /spawnpoint
-[14:02:34] [Server thread/INFO]: [trdung2007: Set spawn point to 72, 71, 162 [0.0, 0.0] in minecraft:overworld for trdung2007]
-[14:02:43] [Server thread/INFO]: trdung2007 issued server command: /spawn
-[14:03:16] [Server thread/INFO]: trdung2007 issued server command: /spawn
-[14:03:53] [Server thread/INFO]: trdung2007 lost connection: Disconnected
-[14:03:53] [Server thread/INFO]: trdung2007 left the game
-[14:04:00] [Server thread/INFO]: Stopping the server
-[14:04:00] [Server thread/INFO]: Stopping server
-[14:04:00] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
-[14:04:00] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.10.1-SNAPSHOT
-[14:04:00] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[14:04:00] [Server thread/INFO]: [Geyser-Spigot] Disabled extension EmoteOffhand
-[14:04:00] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[14:04:00] [Server thread/INFO]: [UtilityTools] Disabling UtilityTools v1.0.0
-[14:04:00] [Server thread/INFO]: [UtilityTools] UtilityTools Plugin da tat.
-[14:04:00] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.10.1-SNAPSHOT
-[14:04:00] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[14:04:00] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b134-963ae91)
-[14:04:00] [Server thread/INFO]: Saving players
-[14:04:00] [Server thread/INFO]: Saving worlds
-[14:04:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Saved 168 block chunks, 314 entity chunks, 0 poi chunks in world 'world' in 0.13s
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[14:04:00] [WebSocketConnectReadThread-106/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[14:04:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[14:04:00] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[14:04:00] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[14:04:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[14:04:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[14:04:00] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[14:04:00] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[14:04:00] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[14:04:00] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[14:04:00] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[14:04:00] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[16:38:09] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
+[16:38:11] [ServerMain/INFO]: Loaded 1470 recipes
+[16:38:11] [ServerMain/INFO]: Loaded 1584 advancements
+[16:38:11] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
+[16:38:11] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 301.3ms
+[16:38:11] [Server thread/INFO]: Starting minecraft server version 1.21.11
+[16:38:11] [Server thread/INFO]: Loading properties
+[16:38:11] [Server thread/INFO]: This server is running Paper version 1.21.11-69-main@94d0c97 (2025-12-30T20:33:30Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
+[16:38:11] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:38:11] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:38:11] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:38:12] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
+[16:38:12] [Server thread/INFO]: Default game type: SURVIVAL
+[16:38:12] [Server thread/INFO]: Generating keypair
+[16:38:12] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:38:12] [Server thread/INFO]: Paper: Using Java compression from Velocity.
+[16:38:12] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
+[16:38:13] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b134-963ae91)
+[16:38:14] [Server thread/INFO]: [floodgate] Took 780ms to boot Floodgate
+[16:38:14] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.10.1-SNAPSHOT
+[16:38:14] [Server thread/INFO]: [ViaVersion] ViaVersion 5.10.1-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
+[16:38:14] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
+[16:38:15] [Server thread/INFO]: [UtilityTools] Loading server plugin UtilityTools v1.0.0
+[16:38:15] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.10.1-SNAPSHOT
+[16:38:15] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
+[16:38:15] [Server thread/INFO]: [Geyser-Spigot] Enabled extension EmoteOffhand
+[16:38:15] [Server thread/INFO]: [Geyser-Spigot] Loaded 1 extension(s)
+[16:38:15] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
+[16:38:15] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:38:15] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:38:15] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:38:15] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:38:15] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:38:15] [Server thread/INFO]: Preparing level "world"
+[16:38:16] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
+[16:38:16] [Server thread/INFO]: Preparing spawn area: 100%
+[16:38:16] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:38:16] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
+[16:38:16] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:38:16] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
+[16:38:16] [Server thread/INFO]: Preparing spawn area: 100%
+[16:38:16] [Server thread/INFO]: Prepared spawn area in 1 ms
+[16:38:16] [Server thread/INFO]: Done preparing level "world" (0.475s)
+[16:38:16] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b134-963ae91)
+[16:38:16] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.10.1-SNAPSHOT
+[16:38:16] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
+[16:38:16] [Server thread/INFO]: [UtilityTools] Enabling UtilityTools v1.0.0
+[16:38:16] [Server thread/INFO]: [UtilityTools] ===========================================
+[16:38:16] [Server thread/INFO]: [UtilityTools]  UtilityTools Plugin da khoi dong!
+[16:38:16] [Server thread/INFO]: [UtilityTools]  TreeCapitator: HOAT DONG
+[16:38:16] [Server thread/INFO]: [UtilityTools]  OreVeinMiner: HOAT DONG
+[16:38:16] [Server thread/INFO]: [UtilityTools]  Hammer 3x3: HOAT DONG
+[16:38:16] [Server thread/INFO]: [UtilityTools]  TorchLight (Duoc Sang): HOAT DONG
+[16:38:16] [Server thread/INFO]: [UtilityTools]  KingMC Features (Economy, Shop, Spawners): HOAT DONG
+[16:38:16] [Server thread/INFO]: [UtilityTools] ===========================================
+[16:38:16] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.10.1-SNAPSHOT
+[16:38:17] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
+[16:38:18] [Server thread/INFO]: [spark] Starting background profiler...
+[16:38:18] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
+[16:38:18] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[16:38:18] [Server thread/INFO]: [Geyser-Spigot] 
+[16:38:18] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.10.1-b1172 (git-master-4b27e6f)
+[16:38:18] [Server thread/INFO]: [Geyser-Spigot] 
+[16:38:18] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[16:38:21] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
+[16:38:21] [Server thread/INFO]: [Geyser-Spigot] [emoteoffhand] Loaded EmoteOffhand!
+[16:38:21] [Server thread/INFO]: [Geyser-Spigot] Done (2.674s)! Run /geyser help for help!
+[16:38:21] [Server thread/INFO]: Running delayed init tasks
+[16:38:21] [Server thread/INFO]: Done (19.760s)! For help, type "help"
+[16:38:21] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[16:38:21] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
+[16:38:34] [User Authenticator #0/INFO]: UUID of player trdung2007 is f2f18c50-dd1f-39a1-8d16-29ac615977d5
+[16:38:35] [Server thread/INFO]: trdung2007 joined the game
+[16:38:35] [Server thread/INFO]: trdung2007[/127.0.0.1:55562] logged in with entity id 106 at ([world]89.41744648287288, 70.0, 129.10603206824075)
+[16:38:51] [GeyserServerChild-4-1/INFO]: [Geyser-Spigot] Player connected with username Quoc chim to 20 (924)
+[16:38:51] [localSession-7-2/INFO]: [Geyser-Spigot] Quoc chim to 20 (logged in as: Quoc_chim_to_20) has connected to the Java server
+[16:38:52] [Server thread/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 joined (UUID: 00000000-0000-0000-0009-01f5863578d9)
+[16:38:52] [Server thread/WARN]: [floodgate] Missing locale file: vi_VN
+[16:38:52] [Server thread/INFO]: .Quoc_chim_to_20 joined the game
+[16:38:52] [Server thread/INFO]: .Quoc_chim_to_20[/127.128.152.108:0] logged in with entity id 315 at ([world]53.5, 74.0, 88.5)
+[16:39:17] [Server thread/INFO]: .Quoc_chim_to_20 was slain by trdung2007 using [Chùy Quỷ Dữ]
+[16:39:38] [Server thread/INFO]: trdung2007 issued server command: /shop
+[16:40:08] [Server thread/INFO]: trdung2007 issued server command: /shop
+[16:40:18] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /shop
+[16:40:21] [Server thread/INFO]: .Quoc_chim_to_20 has reached the goal [Sky's the Limit]
+[16:40:25] [Server thread/INFO]: trdung2007 issued server command: /givebow
+[16:40:29] [Server thread/INFO]: trdung2007 issued server command: /givemace
+[16:40:35] [Server thread/INFO]: .Quoc_chim_to_20 has reached the goal [Postmortal]
+[16:41:16] [Server thread/INFO]: trdung2007 issued server command: /shop
+[16:41:47] [Server thread/INFO]: Set the time to 1000
+[16:41:56] [Server thread/INFO]: trdung2007 issued server command: /raid
+[16:41:56] [Server thread/INFO]: =================================
+[16:41:56] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[16:41:56] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[16:41:56] [Server thread/INFO]: X: 38, Y: 72, Z: 76
+[16:41:56] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[16:41:56] [Server thread/INFO]: =================================
+[16:42:03] [Server thread/INFO]: .Quoc_chim_to_20 was blown up by ☠ Quỷ Vương Zombie ☠ [ 191/200 ❤ ] using [Chùy Quỷ Dữ]
+[16:42:03] [Server thread/INFO]: .Quoc_chim_to_20 died
+[16:42:10] [Server thread/INFO]: .Quoc_chim_to_20 has made the advancement [Stone Age]
+[16:42:14] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[16:42:14] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 13/100 ❤ ]'/816, uuid='d5de6bbe-08b4-4495-9eba-7277ee8b6b23', l='ServerLevel[world]', x=26.01, y=70.77, z=76.88, cpos=[1, 4], tl=352, v=true] died: ☠ Quỷ Vương Xương ☠ [ 13/100 ❤ ] was blown up by ☠ Quỷ Vương Xương ☠ [ 12/100 ❤ ] using [Cung Hủy Diệt]
+[16:42:15] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
+[16:42:15] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 11/100 ❤ ]'/813, uuid='a33736fb-e906-4316-a1f1-64471cccf6c5', l='ServerLevel[world]', x=28.60, y=68.00, z=63.60, cpos=[1, 3], tl=385, v=true] died: ☠ Quỷ Vương Xương ☠ [ 11/100 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 99/200 ❤ ] using [Chùy Quỷ Dữ]
+[16:42:35] [Server thread/INFO]: .Quoc_chim_to_20 has made the advancement [Take Aim]
+[16:43:41] [Server thread/WARN]: trdung2007 moved wrongly!
+[16:43:42] [Server thread/INFO]: .Quoc_chim_to_20 has made the advancement [Monster Hunter]
+[16:43:56] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
+[16:43:56] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 7/200 ❤ ]'/817, uuid='3d3c2490-6b20-4abc-b80d-b0c0abe49239', l='ServerLevel[world]', x=51.01, y=50.90, z=55.01, cpos=[3, 3], tl=2389, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 7/200 ❤ ] was blown up by .Quoc_chim_to_20 using [Cung Hủy Diệt]
+[16:44:00] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 1 Boss
+[16:44:00] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ]'/815, uuid='8233d82b-8f74-4430-9aa7-49690ca27435', l='ServerLevel[world]', x=48.74, y=66.92, z=68.81, cpos=[3, 4], tl=2483, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ] was blown up by trdung2007 using [Cung Hủy Diệt]
+[16:44:35] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 0 Boss
+[16:44:35] [Server thread/INFO]: =================================
+[16:44:35] [Server thread/INFO]: 🎉 CUỘC ĐỘT KÍCH ĐÃ BỊ ĐẨY LÙI 🎉
+[16:44:35] [Server thread/INFO]: Cả 5 Quỷ Vương đã bị tiêu diệt!
+[16:44:35] [Server thread/INFO]: =================================
+[16:44:35] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 4/200 ❤ ]'/814, uuid='3e7f57b7-05f4-4efd-975c-fc64a2fdfe04', l='ServerLevel[world]', x=35.93, y=53.00, z=47.99, cpos=[2, 2], tl=3176, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 4/200 ❤ ] was blown up by trdung2007 using [Cung Hủy Diệt]
+[16:45:49] [Server thread/INFO]: trdung2007 issued server command: /hammer give trdung2007 diamond
+[16:45:57] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /shop
+[16:46:04] [Server thread/INFO]: trdung2007 issued server command: /hammer give trdung2007 diamond
+[16:46:30] [Server thread/WARN]: .Quoc_chim_to_20 was kicked for floating too long!
+[16:46:30] [Server thread/INFO]: .Quoc_chim_to_20 lost connection: Flying is not enabled on this server
+[16:46:30] [localSession-7-2/INFO]: [Geyser-Spigot] Quoc chim to 20 has disconnected from the Java server because of Flying is not enabled on this server
+[16:46:30] [Geyser Spigot connection thread-6-3/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 disconnected
+[16:46:30] [Server thread/INFO]: .Quoc_chim_to_20 left the game
+[16:47:25] [GeyserServerChild-4-2/INFO]: [Geyser-Spigot] Player connected with username Quoc chim to 20 (924)
+[16:47:25] [localSession-7-3/INFO]: [Geyser-Spigot] Quoc chim to 20 (logged in as: Quoc_chim_to_20) has connected to the Java server
+[16:47:25] [Server thread/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 joined (UUID: 00000000-0000-0000-0009-01f5863578d9)
+[16:47:25] [Server thread/WARN]: [floodgate] Missing locale file: vi_VN
+[16:47:25] [Server thread/INFO]: .Quoc_chim_to_20 joined the game
+[16:47:25] [Server thread/INFO]: .Quoc_chim_to_20[/127.128.152.108:0] logged in with entity id 2173 at ([world]17.396809, 65.60949755346641, 65.12874)
+[16:47:27] [Server thread/INFO]: trdung2007 issued server command: /sell
+[16:47:35] [Server thread/WARN]: .Quoc_chim_to_20 was kicked for floating too long!
+[16:47:35] [Server thread/INFO]: .Quoc_chim_to_20 lost connection: Flying is not enabled on this server
+[16:47:35] [Geyser Spigot connection thread-6-4/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 disconnected
+[16:47:35] [localSession-7-3/INFO]: [Geyser-Spigot] Quoc chim to 20 has disconnected from the Java server because of Flying is not enabled on this server
+[16:47:35] [Server thread/INFO]: .Quoc_chim_to_20 left the game
+[16:48:33] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/2702, uuid='f7123b65-4fe1-403e-8620-0cab52c10723', l='ServerLevel[world]', x=47.40, y=40.00, z=88.50, cpos=[2, 5], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[16:49:21] [GeyserServerChild-4-3/INFO]: [Geyser-Spigot] Player connected with username Quoc chim to 20 (924)
+[16:49:21] [localSession-7-4/INFO]: [Geyser-Spigot] Quoc chim to 20 (logged in as: Quoc_chim_to_20) has connected to the Java server
+[16:49:21] [Server thread/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 joined (UUID: 00000000-0000-0000-0009-01f5863578d9)
+[16:49:21] [Server thread/WARN]: [floodgate] Missing locale file: vi_VN
+[16:49:21] [Server thread/INFO]: .Quoc_chim_to_20 joined the game
+[16:49:21] [Server thread/INFO]: .Quoc_chim_to_20[/127.128.152.108:0] logged in with entity id 3917 at ([world]17.396809, 64.05508137908883, 65.12874)
+[16:50:41] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /shop
+[16:50:46] [Server thread/INFO]: .Quoc_chim_to_20 has made the advancement [Into Fire]
+[16:51:27] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /tpa trdung2007
+[16:51:27] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/5578, uuid='2f0980f2-9fc1-42c0-8a81-e0f95024bb1c', l='ServerLevel[world]', x=39.40, y=3.00, z=185.50, cpos=[2, 11], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[16:51:28] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/5619, uuid='b00ce098-ecf4-4b89-91ae-e815072e1cb8', l='ServerLevel[world]', x=-3.40, y=-25.00, z=70.40, cpos=[-1, 4], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[16:51:28] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/5620, uuid='82817d8e-939c-4e84-86e1-670537815205', l='ServerLevel[world]', x=-3.40, y=-25.00, z=70.40, cpos=[-1, 4], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[16:51:35] [Server thread/INFO]: .Quoc_chim_to_20 has made the advancement [Diamonds!]
+[16:53:49] [Server thread/INFO]: trdung2007 issued server command: /shop
+[16:53:52] [Server thread/INFO]: trdung2007 issued server command: /sell
+[16:54:10] [Server thread/INFO]: trdung2007 issued server command: /shop
+[16:57:48] [Server thread/INFO]: trdung2007 issued server command: /
+[16:58:45] [Server thread/INFO]: trdung2007 issued server command: /sell
+[16:58:56] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /sell
+[16:58:59] [Server thread/INFO]: trdung2007 issued server command: /home spawn
+[16:59:15] [Server thread/INFO]: trdung2007 issued server command: /shop
+[16:59:23] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /rtp
+[16:59:37] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/12808, uuid='d06c72e7-5c25-4662-86b9-457c15f8e203', l='ServerLevel[world]', x=108.60, y=18.00, z=-78.50, cpos=[6, -5], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[16:59:37] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/12809, uuid='ffaf89ac-50ed-40cc-a4e3-7fa5ac5d1143', l='ServerLevel[world]', x=108.60, y=18.00, z=-78.50, cpos=[6, -5], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:00:49] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/13799, uuid='893512cb-c078-41a9-8ea3-ca6708177d84', l='ServerLevel[world]', x=1132.50, y=29.00, z=-2757.50, cpos=[70, -173], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:00:50] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/13817, uuid='5598a471-4fca-44c5-88e3-2758115294b6', l='ServerLevel[world]', x=1177.50, y=-3.00, z=-2624.60, cpos=[73, -165], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:03:29] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/15485, uuid='fa2c53f1-f90e-418f-81c2-0008774089ad', l='ServerLevel[world]', x=-234.50, y=-25.00, z=252.40, cpos=[-15, 15], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:03:29] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/15488, uuid='138196fc-5407-4e2b-a53e-f4027c20ff45', l='ServerLevel[world]', x=-234.50, y=-25.00, z=252.40, cpos=[-15, 15], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:03:30] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/15528, uuid='766e962d-18eb-42ca-a892-2784154629ee', l='ServerLevel[world]', x=-145.50, y=17.00, z=207.60, cpos=[-10, 12], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:03:35] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/15649, uuid='a3fbf311-b536-4543-8e42-8648b25b014a', l='ServerLevel[world]', x=-99.60, y=-8.00, z=63.40, cpos=[-7, 3], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:03:37] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/15709, uuid='bed9f239-71ab-426d-83ff-85f1b875beb5', l='ServerLevel[world]', x=4.50, y=-32.00, z=124.50, cpos=[0, 7], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:04:12] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/16261, uuid='9ba2c012-3878-4037-8a3b-98fb8df96544', l='ServerLevel[world]', x=944.60, y=20.00, z=-2720.60, cpos=[59, -171], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:04:30] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/16403, uuid='b227f409-8464-4c3e-b287-399677540652', l='ServerLevel[world]', x=943.60, y=30.00, z=-2723.50, cpos=[58, -171], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:04:30] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/16405, uuid='832dee0b-1bd1-4647-8509-1ccfedc90233', l='ServerLevel[world]', x=943.60, y=30.00, z=-2723.50, cpos=[58, -171], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:05:11] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/16787, uuid='17c5fd65-8cf0-42f5-8a6b-cb2f40d0a98f', l='ServerLevel[world]', x=946.50, y=24.00, z=-2594.60, cpos=[59, -163], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:05:18] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/16889, uuid='560ecb1f-4242-4f8d-a58b-516cb18fd896', l='ServerLevel[world]', x=952.50, y=-21.00, z=-2531.50, cpos=[59, -159], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:05:22] [Server thread/WARN]: [ca.spottedleaf.moonrise.patches.chunk_system.level.entity.EntityLookup] Entity uuid already exists: bedff88e-d2d9-43a9-8108-769d9ca005aa, mapped to Cow['Cow'/16925, uuid='bedff88e-d2d9-43a9-8108-769d9ca005aa', l='ServerLevel[world]', x=1144.00, y=78.00, z=-2293.00, cpos=[71, -144], tl=0, v=false], can't add Sheep['Sheep'/16929, uuid='bedff88e-d2d9-43a9-8108-769d9ca005aa', l='ServerLevel[world]', x=1112.00, y=72.00, z=-2294.00, cpos=[69, -144], tl=0, v=false]
+[17:05:39] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/17187, uuid='f95270d5-fb00-45e0-946c-7dd82af2433c', l='ServerLevel[world]', x=871.50, y=71.00, z=-2495.50, cpos=[54, -156], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:05:54] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/17383, uuid='414da179-193b-45f4-9bec-4f590070e968', l='ServerLevel[world]', x=243.60, y=60.00, z=225.60, cpos=[15, 14], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:05:56] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/17477, uuid='3dee8902-72d5-47ee-b432-0642c81e2995', l='ServerLevel[world]', x=156.50, y=32.00, z=400.50, cpos=[9, 25], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:06:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/17632, uuid='5997ce7b-cfad-4ee5-ab75-8460b172885b', l='ServerLevel[world]', x=29.50, y=37.00, z=310.40, cpos=[1, 19], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:06:13] [Server thread/INFO]: trdung2007 issued server command: /shop
+[17:06:18] [Server thread/INFO]: trdung2007 issued server command: /shop
+[17:06:31] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/18983, uuid='a6e63903-1e28-4da9-9326-d79345045c0f', l='ServerLevel[world]', x=-113.60, y=-8.00, z=366.40, cpos=[-8, 22], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:06:33] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/19045, uuid='53623113-70cc-4985-b13c-24d71db27741', l='ServerLevel[world]', x=30.50, y=37.00, z=310.40, cpos=[1, 19], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:06:34] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/19155, uuid='bd4fd788-14a0-4c7e-ae59-56a62231c2c2', l='ServerLevel[world]', x=-55.50, y=-2.00, z=520.60, cpos=[-4, 32], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:06:35] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/19216, uuid='74047509-02d7-4995-9219-1a6d86649fa5', l='ServerLevel[world]', x=879.60, y=72.00, z=-2417.40, cpos=[54, -152], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:06:38] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/19393, uuid='71f0c994-14ba-4e0e-8ba4-461d4b8485ad', l='ServerLevel[world]', x=49.60, y=30.00, z=573.60, cpos=[3, 35], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:06:44] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/19808, uuid='7686681f-ad00-43b3-afc6-162903917456', l='ServerLevel[world]', x=76.40, y=-8.00, z=787.50, cpos=[4, 49], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:06:44] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/19809, uuid='200dad31-850e-40bb-8b46-a17fcde9cc9e', l='ServerLevel[world]', x=76.40, y=-8.00, z=787.50, cpos=[4, 49], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:06:50] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/20360, uuid='28d01490-d216-4b99-a7da-4fe0d73d7c7d', l='ServerLevel[world]', x=59.60, y=2.00, z=978.60, cpos=[3, 61], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:06:55] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/20615, uuid='e958a5bc-21e2-4d73-8feb-1db6b93fc279', l='ServerLevel[world]', x=105.40, y=29.00, z=943.60, cpos=[6, 58], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:02] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/20945, uuid='aab7125b-a7d9-45b5-901b-1952eabd32d8', l='ServerLevel[world]', x=130.50, y=-2.00, z=1287.50, cpos=[8, 80], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:06] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/21550, uuid='e60c5b6a-652d-446b-99cf-2d50ea2b34a3', l='ServerLevel[world]', x=234.50, y=-1.00, z=1369.50, cpos=[14, 85], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:07] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/21613, uuid='b8a1e3cc-3e5a-4142-9e35-4329759d01e7', l='ServerLevel[world]', x=117.50, y=-5.00, z=1339.60, cpos=[7, 83], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:07:09] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/21722, uuid='5205826a-f91e-4ba5-b0b1-eec1215eef86', l='ServerLevel[world]', x=248.40, y=4.00, z=1382.50, cpos=[15, 86], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:09] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/21724, uuid='af53156a-d958-428e-9f0c-55f14f5b6689', l='ServerLevel[world]', x=246.60, y=4.00, z=1387.50, cpos=[15, 86], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:09] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/21729, uuid='32e3bccd-a023-48e1-b68c-feabfa99a5af', l='ServerLevel[world]', x=248.40, y=4.00, z=1382.50, cpos=[15, 86], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:07:14] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/21974, uuid='25713bb3-0fda-42b1-a6c3-5588aea5c9c9', l='ServerLevel[world]', x=101.50, y=-43.00, z=1327.40, cpos=[6, 82], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:20] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/22208, uuid='1e286da7-f054-4191-b7af-017b0ad4e424', l='ServerLevel[world]', x=914.50, y=17.00, z=-2437.50, cpos=[57, -153], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:20] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/22210, uuid='e42ff17e-a709-4e0b-8c61-10c115f76cfe', l='ServerLevel[world]', x=914.50, y=17.00, z=-2437.50, cpos=[57, -153], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:07:21] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/22228, uuid='bf32ec51-d5a5-476f-9a1e-d347ef274b9e', l='ServerLevel[world]', x=996.50, y=75.00, z=-2457.60, cpos=[62, -154], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:30] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/22554, uuid='0ab3ea99-fdea-4829-b8dd-8f7c46e1a73d', l='ServerLevel[world]', x=233.50, y=-34.00, z=1384.60, cpos=[14, 86], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:07:30] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/22555, uuid='7159568a-c268-4f26-9371-5045f4c62014', l='ServerLevel[world]', x=233.50, y=-34.00, z=1384.60, cpos=[14, 86], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:43] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/22818, uuid='f674afa1-172b-4cea-b93d-1c1d64a3b0cb', l='ServerLevel[world]', x=220.60, y=-47.00, z=1242.60, cpos=[13, 77], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:52] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/23386, uuid='308825b3-8bf4-495d-9d3a-5ef6392cd068', l='ServerLevel[world]', x=441.40, y=36.00, z=952.50, cpos=[27, 59], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:52] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/23398, uuid='e3df5b31-0d88-4318-8312-cbf14252debd', l='ServerLevel[world]', x=444.50, y=20.00, z=971.50, cpos=[27, 60], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:52] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/23401, uuid='426e4e79-15eb-40c2-9a06-f70732cc66dc', l='ServerLevel[world]', x=444.50, y=20.00, z=971.50, cpos=[27, 60], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:07:53] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/23442, uuid='230387e2-005f-4602-803b-0826a6621fce', l='ServerLevel[world]', x=428.60, y=-9.00, z=961.50, cpos=[26, 60], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:08:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/23904, uuid='a27bc40a-7da4-4d14-b24e-abb2b988dab3', l='ServerLevel[world]', x=756.40, y=39.00, z=-2428.40, cpos=[47, -152], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:08:11] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/24733, uuid='dcfbb7ce-5e89-4b6a-839c-c449ba59d701', l='ServerLevel[world]', x=934.40, y=29.00, z=-2373.50, cpos=[58, -149], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:08:29] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/25728, uuid='8726ed2d-7a77-4fe9-86cc-911de624d8b1', l='ServerLevel[world]', x=1134.60, y=118.00, z=465.40, cpos=[70, 29], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:00] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/26762, uuid='dfaf9a14-b566-4295-ad55-2f138b4bfdf5', l='ServerLevel[world]', x=860.50, y=59.00, z=-2221.60, cpos=[53, -139], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/26765, uuid='40e42523-c1d0-4dd7-b207-c5ccc5dda878', l='ServerLevel[world]', x=1034.50, y=78.00, z=153.50, cpos=[64, 9], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:14] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/27337, uuid='8d5833a1-52ee-430b-bd63-1aeb3bd3f9fb', l='ServerLevel[world]', x=705.50, y=40.00, z=336.40, cpos=[44, 21], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/27565, uuid='bcb3ac10-3d9f-4a2b-a425-2cf7e09861c7', l='ServerLevel[world]', x=570.50, y=26.00, z=557.40, cpos=[35, 34], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:19] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/27602, uuid='d3201a5a-ee61-4bb3-8b68-9a2ab78c6142', l='ServerLevel[world]', x=552.60, y=-7.00, z=498.40, cpos=[34, 31], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/27603, uuid='af5b9967-226f-42dd-9ea9-dbde6e5ead0f', l='ServerLevel[world]', x=552.60, y=-7.00, z=498.40, cpos=[34, 31], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:21] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/27677, uuid='59e83c37-1e8d-438c-97fb-50b2c4de6e6c', l='ServerLevel[world]', x=565.50, y=-13.00, z=552.60, cpos=[35, 34], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:26] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/27998, uuid='ab413a17-a9de-41c9-90d4-6bb231482901', l='ServerLevel[world]', x=386.50, y=-22.00, z=619.50, cpos=[24, 38], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:26] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/28005, uuid='9b591bdd-86cf-439e-8875-9bbcb84d54be', l='ServerLevel[world]', x=386.50, y=-22.00, z=619.50, cpos=[24, 38], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:43] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/28842, uuid='b929c9e8-bf11-4516-a164-6797bf164e03', l='ServerLevel[world]', x=972.40, y=0.00, z=-2314.40, cpos=[60, -145], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:43] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/28843, uuid='208b2c42-23ba-4443-b633-6c30edb59075', l='ServerLevel[world]', x=972.40, y=0.00, z=-2314.40, cpos=[60, -145], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:48] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/29148, uuid='ccde6646-2cf2-4f1e-83cd-dd98381478e2', l='ServerLevel[world]', x=-241.50, y=-4.00, z=931.50, cpos=[-16, 58], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:53] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/29528, uuid='9602d6b1-c989-4207-8dfc-47f31c9e3d1f', l='ServerLevel[world]', x=-476.40, y=70.00, z=944.60, cpos=[-30, 59], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:09:55] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/29657, uuid='68de62eb-9f16-45d4-b66a-93ca99382980', l='ServerLevel[world]', x=-299.50, y=53.00, z=1080.40, cpos=[-19, 67], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:55] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/29692, uuid='e052a2c5-d2fa-4fe6-a07b-cfad149a080d', l='ServerLevel[world]', x=-359.50, y=53.00, z=983.40, cpos=[-23, 61], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:09:55] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/29694, uuid='dd88cc31-0292-4bcf-86af-45e9629fd960', l='ServerLevel[world]', x=-359.50, y=53.00, z=983.40, cpos=[-23, 61], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:00] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/30020, uuid='0f774c9a-b43c-40c6-9ce9-f7eb152577c8', l='ServerLevel[world]', x=981.50, y=-29.00, z=-2104.60, cpos=[61, -132], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/30025, uuid='2a2f91ee-da3f-4c33-8b17-deefa94cee4c', l='ServerLevel[world]', x=981.50, y=-29.00, z=-2104.60, cpos=[61, -132], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:10:07] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/30453, uuid='91c1012e-1afd-4663-bca7-8eb97e9e8e47', l='ServerLevel[world]', x=-606.60, y=39.00, z=1255.40, cpos=[-38, 78], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:07] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/30455, uuid='c01eee52-19f5-49b6-8ae9-b51e9001ef71', l='ServerLevel[world]', x=-606.60, y=39.00, z=1255.40, cpos=[-38, 78], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:13] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/30755, uuid='2a4b42c3-11fc-4eb5-b85c-40918408f2b7', l='ServerLevel[world]', x=-612.60, y=19.00, z=1438.50, cpos=[-39, 89], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:10:13] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/30758, uuid='d24a59a5-218c-496d-9064-54c5386fe2b8', l='ServerLevel[world]', x=-612.60, y=19.00, z=1438.50, cpos=[-39, 89], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:23] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/31194, uuid='bac1b75a-9946-4b3f-a4be-51d16ba43a8a', l='ServerLevel[world]', x=-941.50, y=-7.00, z=1478.50, cpos=[-59, 92], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:23] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/31196, uuid='8afd438b-20a6-4c76-bff2-b92cbcbab42a', l='ServerLevel[world]', x=-941.50, y=-7.00, z=1478.50, cpos=[-59, 92], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:10:30] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /tpa trdung2007
+[17:11:09] [Server thread/INFO]: .Quoc_chim_to_20 was slain by trdung2007 using [Chùy Quỷ Dữ]
+[17:11:32] [GeyserServerChild-4-3/INFO]: [Geyser-Spigot] Quoc chim to 20 has disconnected from the Java server because of Bedrock client timed out
+[17:11:32] [Geyser Spigot connection thread-6-1/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 disconnected
+[17:11:32] [Server thread/INFO]: .Quoc_chim_to_20 lost connection: Disconnected
+[17:11:32] [Server thread/INFO]: .Quoc_chim_to_20 left the game
+[17:12:06] [GeyserServerChild-4-4/INFO]: [Geyser-Spigot] Player connected with username Quoc chim to 20 (924)
+[17:12:06] [localSession-7-1/INFO]: [Geyser-Spigot] Quoc chim to 20 (logged in as: Quoc_chim_to_20) has connected to the Java server
+[17:12:07] [Server thread/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 joined (UUID: 00000000-0000-0000-0009-01f5863578d9)
+[17:12:07] [Server thread/WARN]: [floodgate] Missing locale file: vi_VN
+[17:12:07] [Server thread/INFO]: .Quoc_chim_to_20 joined the game
+[17:12:07] [Server thread/INFO]: .Quoc_chim_to_20[/127.128.152.108:0] logged in with entity id 31604 at ([world]-900.9762331471007, 72.98239509692073, 1472.149698485829)
+[17:12:07] [Server thread/INFO]: trdung2007 issued server command: /shop
+[17:12:36] [Server thread/INFO]: .Quoc_chim_to_20 issued server command: /tpa trdung2007
+[17:13:09] [Server thread/INFO]: trdung2007 issued server command: /sell
+[17:13:44] [Server thread/WARN]: .Quoc_chim_to_20 was kicked for floating too long!
+[17:13:44] [Server thread/INFO]: .Quoc_chim_to_20 lost connection: Flying is not enabled on this server
+[17:13:44] [Geyser Spigot connection thread-6-2/INFO]: [floodgate] Floodgate player logged in as .Quoc_chim_to_20 disconnected
+[17:13:44] [localSession-7-1/INFO]: [Geyser-Spigot] Quoc chim to 20 has disconnected from the Java server because of Flying is not enabled on this server
+[17:13:44] [Server thread/INFO]: .Quoc_chim_to_20 left the game
+[17:14:07] [Server thread/INFO]: Set the time to 1000
+[17:14:51] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/32413, uuid='17cc08e1-0633-4e74-8718-56864496b02c', l='ServerLevel[world]', x=-1038.40, y=-2.00, z=1550.60, cpos=[-65, 96], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:15:06] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/32441, uuid='3be2cb2d-ac4e-409f-93ad-5a65ebe6e969', l='ServerLevel[world]', x=-957.60, y=-3.00, z=1377.60, cpos=[-60, 86], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:19:18] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/32912, uuid='11f1174f-c868-4ab0-99de-d68052556c28', l='ServerLevel[world]', x=-1020.50, y=36.00, z=1485.50, cpos=[-64, 92], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:22:37] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/33230, uuid='47df18dd-ed19-4f8c-bedf-2dd1a26bebb2', l='ServerLevel[world]', x=-898.60, y=5.00, z=1392.60, cpos=[-57, 87], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:23:20] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/33303, uuid='95bbbb41-faee-4bb3-9a88-e4b9c66ff2f4', l='ServerLevel[world]', x=-1080.50, y=17.00, z=1438.50, cpos=[-68, 89], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:23:20] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/33304, uuid='fc218c74-1340-4183-9eba-7b7ea98398ba', l='ServerLevel[world]', x=-1080.50, y=17.00, z=1438.50, cpos=[-68, 89], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[17:23:20] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/33305, uuid='75b7a020-9c0e-4c8b-ab84-9e59ff0c03ab', l='ServerLevel[world]', x=-1080.50, y=17.00, z=1438.50, cpos=[-68, 89], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[17:25:24] [Server thread/INFO]: trdung2007 lost connection: Disconnected
+[17:25:24] [Server thread/INFO]: trdung2007 left the game
+[19:04:33] [Server thread/INFO]: Stopping the server
+[19:04:34] [Server thread/INFO]: Stopping server
+[19:04:34] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
+[19:04:34] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.10.1-SNAPSHOT
+[19:04:34] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[19:04:34] [Server thread/INFO]: [Geyser-Spigot] Disabled extension EmoteOffhand
+[19:04:34] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[19:04:34] [Server thread/INFO]: [UtilityTools] Disabling UtilityTools v1.0.0
+[19:04:34] [Server thread/INFO]: [UtilityTools] UtilityTools Plugin da tat.
+[19:04:34] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.10.1-SNAPSHOT
+[19:04:34] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[19:04:34] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b134-963ae91)
+[19:04:34] [Server thread/INFO]: Saving players
+[19:04:34] [Server thread/INFO]: Saving worlds
+[19:04:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
+[19:04:34] [WebSocketConnectReadThread-108/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.19s
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
+[19:04:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
+[19:04:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
+[19:04:34] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
+[19:04:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[19:04:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[19:04:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[19:04:34] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[19:04:34] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
+[19:04:34] [Server thread/INFO]: All RegionFile I/O tasks to complete
+[19:04:34] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[19:04:34] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

@@ -54,7 +54,7 @@ public class ShopManager implements CommandExecutor, Listener {
         inv.setItem(14, createShopItem(Material.SPAWNER, "§fLồng Skeleton (Rương)", 100, "skeleton", 1));
         inv.setItem(15, createShopItem(Material.SPAWNER, "§cLồng Quỷ Lửa (Rương)", 100, "blaze", 1));
         inv.setItem(16, createShopItem(Material.SPAWNER, "§7Lồng Người Sắt (Rương)", 150, "iron_golem", 1));
-        inv.setItem(17, createShopItem(Material.ENCHANTED_GOLDEN_APPLE, "§d🍎 Táo Vàng Phù Phép", 300, null, 64));
+        inv.setItem(17, createShopItem(Material.GOLDEN_APPLE, "§e🍎 Táo Vàng", 300, null, 64));
         inv.setItem(18, createShopItem(Material.EXPERIENCE_BOTTLE, "§aChai Kinh Nghiệm", 200, null, 64));
         inv.setItem(19, createShopItem(Material.OBSIDIAN, "§5Hắc Diện Thạch", 100, null, 64));
         inv.setItem(20, createShopItem(Material.ENDER_CHEST, "§5Rương Ender", 1000, null, 1));

@@ -34,13 +34,21 @@ public class SpawnBossCommand implements CommandExecutor, TabCompleter {
             return true;
         }
 
+        Location loc = player.getLocation();
         if (args.length == 0) {
-            player.sendMessage(ChatColor.RED + "Cách sử dụng: /spawn <ske|zombie>");
+            // Nếu chỉ gõ /spawn mà không ghi rõ ske hay zombie -> Triệu hồi cả 2 Boss cùng lúc!
+            Skeleton skeleton = (Skeleton) loc.getWorld().spawnEntity(loc, EntityType.SKELETON);
+            plugin.getBossSkeletonManager().makeBossSkeleton(skeleton);
+
+            Zombie zombie = (Zombie) loc.getWorld().spawnEntity(loc, EntityType.ZOMBIE);
+            plugin.getBossZombieManager().makeBossZombie(zombie);
+
+            player.sendMessage(ChatColor.GREEN + "Đã triệu hồi đồng thời §4§l☠ Quỷ Vương Xương ☠§a và §4§l☠ Quỷ Vương Zombie ☠§a thành công!");
+            player.sendMessage(ChatColor.YELLOW + "Mẹo: Bạn có thể gõ cụ thể /spawn ske hoặc /spawn zombie để gọi từng con.");
             return true;
         }
 
         String type = args[0].toLowerCase();
-        Location loc = player.getLocation();
 
         if (type.equalsIgnoreCase("ske") || type.equalsIgnoreCase("skeleton")) {
             Skeleton skeleton = (Skeleton) loc.getWorld().spawnEntity(loc, EntityType.SKELETON);

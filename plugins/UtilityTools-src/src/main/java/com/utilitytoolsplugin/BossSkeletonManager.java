@@ -315,6 +315,18 @@ public class BossSkeletonManager implements Listener {
     }
 
     @EventHandler
+    public void onBossSkeletonDamage(org.bukkit.event.entity.EntityDamageByEntityEvent event) {
+        // Tăng sát thương gấp 3.5 lần khi Boss Skeleton bắn trúng hoặc vụ nổ của nó gây sát thương
+        if (event.getDamager() instanceof Arrow arrow) {
+            if (arrow.getShooter() instanceof Skeleton skeleton && isBossSkeleton(skeleton)) {
+                event.setDamage(event.getDamage() * 3.5);
+            }
+        } else if (event.getDamager() instanceof Skeleton skeleton && isBossSkeleton(skeleton)) {
+            event.setDamage(event.getDamage() * 3.5);
+        }
+    }
+
+    @EventHandler
     public void onBossRegainHealth(org.bukkit.event.entity.EntityRegainHealthEvent event) {
         if (event.isCancelled()) return;
         if (isBossSkeleton(event.getEntity())) {

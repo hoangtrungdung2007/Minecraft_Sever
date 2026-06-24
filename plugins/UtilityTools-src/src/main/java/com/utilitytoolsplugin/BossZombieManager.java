@@ -47,7 +47,7 @@ public class BossZombieManager implements Listener {
     // Boss multiplier
     private static final double SCALE = 2.0; // Giảm Scale từ 3.0 xuống 2.0 (cao ~4 block) để Pathfinder không bị điên
     private static final double HP_MULT = 10.0; // 200 HP
-    private static final double DAMAGE_MULT = 5.0; // Sát thương x5 (15 damage)
+    private static final double DAMAGE_MULT = 17.5; // Sát thương x17.5 (52.5 damage - tăng gấp 3.5 lần)
     private static final double RANGE_MULT = 1.0; // Tầm nhìn 50 block
 
     // Xác suất mỗi zombie tự nhiên → boss (giữ tương đương spawn rate zombie)

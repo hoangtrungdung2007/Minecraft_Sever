@@ -23,6 +23,7 @@ com\utilitytoolsplugin\TorchLightListener$1.class
 com\utilitytoolsplugin\TreeCapitatorListener.class
 com\utilitytoolsplugin\HammerListener$1.class
 com\utilitytoolsplugin\MinimapManager.class
+com\utilitytoolsplugin\SpawnBossCommand.class
 com\utilitytoolsplugin\HammerListener.class
 com\utilitytoolsplugin\TPAManager.class
 com\utilitytoolsplugin\RaidManager.class

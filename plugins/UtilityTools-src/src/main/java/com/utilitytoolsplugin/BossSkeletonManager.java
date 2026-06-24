@@ -22,6 +22,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.Plugin;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 
@@ -32,7 +34,10 @@ public class BossSkeletonManager implements Listener {
     private final NamespacedKey BOSS_KEY;
     private final NamespacedKey EXPLOSIVE_BOW_KEY;
     private final NamespacedKey EXPLOSIVE_ARROW_KEY;
+    private final NamespacedKey ANCHOR_ARROW_KEY;
 
+    // hit count: UUID boss -> số lần bắn
+    private final Map<UUID, Integer> hitCountMap = new HashMap<>();
     private final Random random = new Random();
 
     // Thông số Skeleton thường
@@ -52,6 +57,7 @@ public class BossSkeletonManager implements Listener {
         this.BOSS_KEY = new NamespacedKey(plugin, "boss_skeleton");
         this.EXPLOSIVE_BOW_KEY = new NamespacedKey(plugin, "explosive_bow");
         this.EXPLOSIVE_ARROW_KEY = new NamespacedKey(plugin, "explosive_arrow");
+        this.ANCHOR_ARROW_KEY = new NamespacedKey(plugin, "anchor_arrow");
     }
 
     // ===================== SPAWN =====================
@@ -159,6 +165,29 @@ public class BossSkeletonManager implements Listener {
         // Nếu người bắn dùng Cung Hủy Diệt -> Đánh dấu mũi tên này là mũi tên nổ
         if (bow.getItemMeta().getPersistentDataContainer().has(EXPLOSIVE_BOW_KEY, PersistentDataType.BYTE)) {
             event.getProjectile().getPersistentDataContainer().set(EXPLOSIVE_ARROW_KEY, PersistentDataType.BYTE, (byte) 1);
+            
+            // Nếu người bắn là Player, đếm lượt bắn kích hoạt Neo Hồi Sinh ở đòn thứ 3
+            if (event.getEntity() instanceof Player player) {
+                UUID id = player.getUniqueId();
+                int shots = hitCountMap.getOrDefault(id, 0) + 1;
+                hitCountMap.put(id, shots);
+
+                if (shots % 3 == 0) {
+                    event.getProjectile().getPersistentDataContainer().set(ANCHOR_ARROW_KEY, PersistentDataType.BYTE, (byte) 1);
+                    player.sendMessage("§c§l💥 Mũi tên thứ 3: §4§lSỨC MẠNH NEO HỒI SINH ĐÃ ĐƯỢC KÍCH HOẠT!");
+                }
+            }
+        }
+
+        // Nếu người bắn là Boss Skeleton, đếm số lần bắn để kích hoạt mũi tên Neo Hồi Sinh (đòn thứ 3)
+        if (event.getEntity() instanceof Skeleton skeleton && isBossSkeleton(skeleton)) {
+            UUID id = skeleton.getUniqueId();
+            int shots = hitCountMap.getOrDefault(id, 0) + 1;
+            hitCountMap.put(id, shots);
+
+            if (shots % 3 == 0) {
+                event.getProjectile().getPersistentDataContainer().set(ANCHOR_ARROW_KEY, PersistentDataType.BYTE, (byte) 1);
+            }
         }
     }
 
@@ -168,18 +197,33 @@ public class BossSkeletonManager implements Listener {
         if (!(proj instanceof Arrow arrow)) return;
         
         boolean isExplosive = false;
+        boolean isAnchorExplosion = false;
 
-        // Kích nổ nếu mũi tên có đánh dấu từ Cung Hủy Diệt
-        if (arrow.getPersistentDataContainer().has(EXPLOSIVE_ARROW_KEY, PersistentDataType.BYTE)) {
+        if (arrow.getPersistentDataContainer().has(ANCHOR_ARROW_KEY, PersistentDataType.BYTE)) {
+            isAnchorExplosion = true;
+        } else if (arrow.getPersistentDataContainer().has(EXPLOSIVE_ARROW_KEY, PersistentDataType.BYTE)) {
             isExplosive = true;
-        } 
-        // Hoặc nếu người bắn là Boss Skeleton
-        else if (arrow.getShooter() instanceof Skeleton skeleton && isBossSkeleton(skeleton)) {
+        } else if (arrow.getShooter() instanceof Skeleton skeleton && isBossSkeleton(skeleton)) {
             isExplosive = true;
         }
 
-        if (isExplosive) {
-            // Gây nổ giống hệt TNT (power = 4.0F)
+        if (isAnchorExplosion) {
+            Entity shooter = arrow.getShooter() instanceof Entity ? (Entity) arrow.getShooter() : null;
+            // Vụ nổ của Neo Hồi Sinh (Respawn Anchor) có power = 5.0F, kèm theo lửa (setFire = true) và phá block
+            arrow.getWorld().createExplosion(arrow.getLocation(), 5.0f, true, true, shooter);
+            
+            // Hiệu ứng âm thanh và hạt của Neo Hồi Sinh / Nổ mạnh
+            arrow.getWorld().playSound(arrow.getLocation(), Sound.BLOCK_RESPAWN_ANCHOR_DEPLETE, 2.0f, 0.5f);
+            arrow.getWorld().playSound(arrow.getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 1.5f, 0.8f);
+            arrow.getWorld().spawnParticle(Particle.EXPLOSION_EMITTER, arrow.getLocation(), 3);
+            arrow.getWorld().spawnParticle(Particle.FLAME, arrow.getLocation(), 50, 1.0, 1.0, 1.0, 0.2);
+
+            // Gửi thông báo cho người chơi nếu bắn trúng người chơi
+            if (event.getHitEntity() instanceof Player p) {
+                p.sendTitle("", "§4§l💥 Vụ nổ Neo Hồi Sinh!", 4, 20, 8);
+            }
+            arrow.remove();
+        } else if (isExplosive) {
             Entity shooter = arrow.getShooter() instanceof Entity ? (Entity) arrow.getShooter() : null;
             arrow.getWorld().createExplosion(arrow.getLocation(), 2.6f, false, true, shooter);
             arrow.remove();
@@ -205,6 +249,8 @@ public class BossSkeletonManager implements Listener {
     @EventHandler
     public void onEntityDeath(EntityDeathEvent event) {
         if (!isBossSkeleton(event.getEntity())) return;
+        UUID id = event.getEntity().getUniqueId();
+        hitCountMap.remove(id);
         
         event.getDrops().clear();
 

@@ -227,32 +227,27 @@ public class BossZombieManager implements Listener {
 
         Entity victim = event.getEntity();
 
-        if (hits % 3 != 0) {
-            // Đòn 1 và 2: Gây cháy, không nổ, sát thương giảm còn 2/3
-            event.setDamage(event.getDamage() * 2.0 / 3.0);
-            victim.setFireTicks(60); // Cháy 3 giây
-        } else {
-            // Đòn thứ 3: Nổ và hất tung cực mạnh, sát thương giữ nguyên
-            victim.getWorld().createExplosion(victim.getLocation(), 1.3f, false, true, zombie);
+        // Đánh phát nào cũng nổ, hất tung cực mạnh và gây cháy
+        victim.setFireTicks(60); // Cháy 3 giây
+        victim.getWorld().createExplosion(victim.getLocation(), 1.3f, false, true, zombie);
 
-            Vector dir = victim.getLocation().toVector()
-                    .subtract(zombie.getLocation().toVector())
-                    .normalize()
-                    .multiply(3.2)
-                    .setY(1.1);
-            victim.setVelocity(dir);
+        Vector dir = victim.getLocation().toVector()
+                .subtract(zombie.getLocation().toVector())
+                .normalize()
+                .multiply(3.2)
+                .setY(1.1);
+        victim.setVelocity(dir);
 
-            // Hiệu ứng + âm thanh mạnh
-            victim.getWorld().spawnParticle(Particle.EXPLOSION_EMITTER,
-                    victim.getLocation().add(0, 1, 0), 2);
-            victim.getWorld().playSound(victim.getLocation(),
-                    Sound.ENTITY_IRON_GOLEM_ATTACK, 1.5f, 0.4f);
-            victim.getWorld().playSound(victim.getLocation(),
-                    Sound.ENTITY_GENERIC_EXPLODE, 0.8f, 1.5f);
+        // Hiệu ứng + âm thanh mạnh
+        victim.getWorld().spawnParticle(Particle.EXPLOSION_EMITTER,
+                victim.getLocation().add(0, 1, 0), 2);
+        victim.getWorld().playSound(victim.getLocation(),
+                Sound.ENTITY_IRON_GOLEM_ATTACK, 1.5f, 0.4f);
+        victim.getWorld().playSound(victim.getLocation(),
+                Sound.ENTITY_GENERIC_EXPLODE, 0.8f, 1.5f);
 
-            if (victim instanceof Player p) {
-                p.sendTitle("", "§c§l⚡ Bị hất tung!", 4, 18, 8);
-            }
+        if (victim instanceof Player p) {
+            p.sendTitle("", "§c§l⚡ Bị hất tung!", 4, 18, 8);
         }
     }
 

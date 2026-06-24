@@ -2,92 +2,92 @@ spawners:
   world|-70|80|-39:
     type: skeleton
     count: 1
-    totalItems: 9854
+    totalItems: 9962
   world|-71|78|-40:
     type: skeleton
     count: 1
-    totalItems: 9867
+    totalItems: 9975
   world|-72|78|-40:
     type: skeleton
     count: 1
-    totalItems: 9865
+    totalItems: 9973
   world|-8|57|263:
     type: skeleton
     count: 1216
-    totalItems: 8808704
+    totalItems: 8940032
   world|-70|80|-40:
     type: skeleton
     count: 1
-    totalItems: 9849
+    totalItems: 9957
   world|34|-8|-14:
     type: skeleton
     count: 130
-    totalItems: 837392
+    totalItems: 851432
   world|75|68|102:
     type: iron_golem
     count: 1
-    totalItems: 1847
+    totalItems: 1955
   world|-419|63|-53:
     type: skeleton
     count: 5377
-    totalItems: 7629043
+    totalItems: 8209759
   world|89|63|235:
     type: skeleton
     count: 1885
-    totalItems: 13093367
+    totalItems: 13296947
   world|0|107|-1:
     type: skeleton
     count: 2
-    totalItems: 16318
+    totalItems: 16534
   world|71|68|101:
     type: skeleton
     count: 4033
-    totalItems: 7041618
+    totalItems: 7477182
   world|-8|70|-88:
     type: blaze
     count: 1
-    totalItems: 3625
+    totalItems: 3733
   world|28|74|65:
     type: skeleton
     count: 98
-    totalItems: 208314
+    totalItems: 218898
   world|-42|85|-107:
     type: skeleton
     count: 1
-    totalItems: 9906
+    totalItems: 10014
   world|1129|82|-2800:
     type: iron_golem
     count: 128
-    totalItems: 158592
+    totalItems: 172416
   world|-71|79|-41:
     type: skeleton
     count: 1
-    totalItems: 9855
+    totalItems: 9963
   world|-72|79|-41:
     type: skeleton
     count: 1
-    totalItems: 9858
+    totalItems: 9966
   world|-41|85|-107:
     type: skeleton
     count: 1
-    totalItems: 9906
+    totalItems: 10014
   world|-87|88|323:
     type: skeleton
     count: 1171
-    totalItems: 8681197
+    totalItems: 8807665
   world|200|73|303:
     type: skeleton
     count: 4
-    totalItems: 28070
+    totalItems: 28502
   world|-72|78|-39:
     type: skeleton
     count: 1
-    totalItems: 9865
+    totalItems: 9973
   world|-71|78|-39:
     type: skeleton
     count: 1
-    totalItems: 9865
+    totalItems: 9973
   world|201|73|303:
     type: skeleton
     count: 1
-    totalItems: 7019
+    totalItems: 7127

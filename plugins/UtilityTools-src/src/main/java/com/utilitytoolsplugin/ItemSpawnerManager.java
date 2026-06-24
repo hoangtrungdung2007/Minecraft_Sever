@@ -207,6 +207,9 @@ public class ItemSpawnerManager implements Listener {
             case "blaze":
                 et = EntityType.BLAZE;
                 break;
+            case "iron_golem":
+                et = EntityType.IRON_GOLEM;
+                break;
             default:
                 et = EntityType.SKELETON;
                 break;
@@ -535,6 +538,8 @@ public class ItemSpawnerManager implements Listener {
             return new ItemStack(Material.BONE, 1);
         if ("blaze".equals(type))
             return new ItemStack(Material.BLAZE_ROD, 1);
+        if ("iron_golem".equals(type))
+            return new ItemStack(Material.IRON_INGOT, 1);
         return null;
     }
 
@@ -543,6 +548,8 @@ public class ItemSpawnerManager implements Listener {
             return "Skeleton";
         if ("blaze".equals(type))
             return "Quỷ Lửa";
+        if ("iron_golem".equals(type))
+            return "Người Sắt";
         return type;
     }
 
@@ -551,6 +558,8 @@ public class ItemSpawnerManager implements Listener {
             return "Xương";
         if ("blaze".equals(type))
             return "Que Quỷ Lửa";
+        if ("iron_golem".equals(type))
+            return "Phôi Sắt";
         return type;
     }
 
@@ -559,7 +568,12 @@ public class ItemSpawnerManager implements Listener {
         ItemMeta meta = item.getItemMeta();
         if (meta == null)
             return item;
-        meta.setDisplayName("skeleton".equals(type) ? "§fLồng Skeleton (Rương)" : "§cLồng Quỷ Lửa (Rương)");
+        
+        String displayName = "§fLồng Skeleton (Rương)";
+        if ("blaze".equals(type)) displayName = "§cLồng Quỷ Lửa (Rương)";
+        if ("iron_golem".equals(type)) displayName = "§7Lồng Người Sắt (Rương)";
+        
+        meta.setDisplayName(displayName);
         meta.setLore(Arrays.asList(
                 "§7• Đứng + Chuột Phải → mở rương lưu trữ.",
                 "§7• SHIFT + Chuột Phải (cầm lồng) → gộp thêm.",

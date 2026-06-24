@@ -8,10 +8,14 @@ stats:
     deaths: 0
     playtime: 77408
   f2f18c50-dd1f-39a1-8d16-29ac615977d5:
-    kills: 2
-    deaths: 88
-    playtime: 25255823
-  a26a9590-3fad-3c6d-914c-115932ca46aa:
+    kills: 8
+    deaths: 94
+    playtime: 42610704
+  1e9cd1bb-67ec-3b64-a969-a80c859da179:
     kills: 1
-    deaths: 3
-    playtime: 6246324
+    deaths: 18
+    playtime: 8798149
+  a26a9590-3fad-3c6d-914c-115932ca46aa:
+    kills: 5
+    deaths: 5
+    playtime: 16984580

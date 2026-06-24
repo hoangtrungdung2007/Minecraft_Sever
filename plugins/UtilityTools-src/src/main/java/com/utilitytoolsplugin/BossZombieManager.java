@@ -42,13 +42,13 @@ public class BossZombieManager implements Listener {
     // Zombie thường (base)
     private static final double BASE_HP = 20.0;
     private static final double BASE_DAMAGE = 3.0;
-    private static final double BASE_RANGE = 35.0;
+    private static final double BASE_RANGE = 50.0; // Tầm nhìn 50 block
 
     // Boss multiplier
     private static final double SCALE = 2.0; // Giảm Scale từ 3.0 xuống 2.0 (cao ~4 block) để Pathfinder không bị điên
     private static final double HP_MULT = 10.0; // 200 HP
-    private static final double DAMAGE_MULT = 3.0;
-    private static final double RANGE_MULT = 0.5; // Giảm tầm nhìn xuống 17.5 block
+    private static final double DAMAGE_MULT = 5.0; // Sát thương x5 (15 damage)
+    private static final double RANGE_MULT = 1.0; // Tầm nhìn 50 block
 
     // Xác suất mỗi zombie tự nhiên → boss (giữ tương đương spawn rate zombie)
     private static final double SPAWN_CHANCE = 0.03; // 3%
@@ -114,20 +114,20 @@ public class BossZombieManager implements Listener {
         // Scale × 3 (Paper 1.20.5+)
         setAttr(zombie, Attribute.SCALE, SCALE);
 
-        // Dame × 3
+        // Dame × 5 (15 Dame)
         setAttr(zombie, Attribute.ATTACK_DAMAGE, BASE_DAMAGE * DAMAGE_MULT);
 
         // Attack speed cao hơn để hoạt ảnh mượt, không đơ
         setAttr(zombie, Attribute.ATTACK_SPEED, 2.0);
 
-        // Phạm vi phát hiện (gấp đôi)
+        // Phạm vi phát hiện 50 block
         setAttr(zombie, Attribute.FOLLOW_RANGE, BASE_RANGE * RANGE_MULT);
 
         // Knockback strength nhỏ (đòn 3 sẽ boost riêng)
         setAttr(zombie, Attribute.ATTACK_KNOCKBACK, 0.5);
 
-        // Tốc độ di chuyển tăng lên 1.25 lần (0.2625 * 1.25 = 0.328125)
-        setAttr(zombie, Attribute.MOVEMENT_SPEED, 0.328125);
+        // Tốc độ di chuyển nhanh bằng zombie con (0.36)
+        setAttr(zombie, Attribute.MOVEMENT_SPEED, 0.36);
 
         // Trang bị giáp Netherite & Đầu Wither Skeleton
         EntityEquipment eq = zombie.getEquipment();

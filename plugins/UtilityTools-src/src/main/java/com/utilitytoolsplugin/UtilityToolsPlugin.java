@@ -99,6 +99,14 @@ public class UtilityToolsPlugin extends JavaPlugin {
         
         getCommand("raid").setExecutor(raidManager);
         
+        GiveWeaponCommand giveWeaponCmd = new GiveWeaponCommand(this);
+        getCommand("givemace").setExecutor(giveWeaponCmd);
+        getCommand("givebow").setExecutor(giveWeaponCmd);
+        
+        SpawnBossCommand spawnBossCmd = new SpawnBossCommand(this);
+        getCommand("spawn").setExecutor(spawnBossCmd);
+        getCommand("spawn").setTabCompleter(spawnBossCmd);
+        
         getLogger().info("===========================================");
         getLogger().info(" UtilityTools Plugin da khoi dong!");
         getLogger().info(" TreeCapitator: HOAT DONG");

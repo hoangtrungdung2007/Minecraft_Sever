@@ -44,6 +44,21 @@ commands:
     usage: "/raid [stop]"
     permission: utilitytoolsplugin.raid
     permission-message: "§cChỉ Admin mới có thể dùng lệnh này!"
+  givemace:
+    description: "Nhận Chùy Quỷ Dữ"
+    usage: "/givemace"
+    permission: utilitytoolsplugin.giveweapon
+    permission-message: "§cBạn không có quyền dùng lệnh này!"
+  givebow:
+    description: "Nhận Cung Hủy Diệt"
+    usage: "/givebow"
+    permission: utilitytoolsplugin.giveweapon
+    permission-message: "§cBạn không có quyền dùng lệnh này!"
+  spawn:
+    description: "Triệu hồi boss (ske hoặc zombie)"
+    usage: "/spawn <ske|zombie>"
+    permission: utilitytoolsplugin.spawnboss
+    permission-message: "§cBạn không có quyền dùng lệnh này!"
 
 permissions:
   utilitytoolsplugin.hammer:
@@ -64,4 +79,12 @@ permissions:
 
   utilitytoolsplugin.raid:
     description: "Cho phép khởi động Raid Boss"
+    default: op
+
+  utilitytoolsplugin.giveweapon:
+    description: "Cho phép dùng lệnh lấy vũ khí boss"
+    default: op
+
+  utilitytoolsplugin.spawnboss:
+    description: "Cho phép dùng lệnh /spawn để triệu hồi boss"
     default: op

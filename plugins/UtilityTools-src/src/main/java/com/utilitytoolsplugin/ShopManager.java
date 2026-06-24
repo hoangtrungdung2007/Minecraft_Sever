@@ -53,8 +53,9 @@ public class ShopManager implements CommandExecutor, Listener {
         inv.setItem(13, createShopItem(Material.BLAZE_ROD, "§6Que Quỷ Lửa", 30, null, 64));
         inv.setItem(14, createShopItem(Material.SPAWNER, "§fLồng Skeleton (Rương)", 100, "skeleton", 1));
         inv.setItem(15, createShopItem(Material.SPAWNER, "§cLồng Quỷ Lửa (Rương)", 100, "blaze", 1));
-        inv.setItem(16, createShopItem(Material.ENCHANTED_GOLDEN_APPLE, "§d🍎 Táo Vàng Phù Phép", 300, null, 64));
-        inv.setItem(17, createShopItem(Material.EXPERIENCE_BOTTLE, "§aChai Kinh Nghiệm", 200, null, 64));
+        inv.setItem(16, createShopItem(Material.SPAWNER, "§7Lồng Người Sắt (Rương)", 150, "iron_golem", 1));
+        inv.setItem(17, createShopItem(Material.ENCHANTED_GOLDEN_APPLE, "§d🍎 Táo Vàng Phù Phép", 300, null, 64));
+        inv.setItem(18, createShopItem(Material.EXPERIENCE_BOTTLE, "§aChai Kinh Nghiệm", 200, null, 64));
         inv.setItem(19, createShopItem(Material.OBSIDIAN, "§5Hắc Diện Thạch", 100, null, 64));
         inv.setItem(20, createShopItem(Material.ENDER_CHEST, "§5Rương Ender", 1000, null, 1));
         inv.setItem(21, createShopItem(Material.FIREWORK_ROCKET, "§bPháo Hoa", 500, null, 64));
@@ -109,8 +110,9 @@ public class ShopManager implements CommandExecutor, Listener {
             case 13: price = 30; break;
             case 14: price = 100; break;
             case 15: price = 100; break;
-            case 16: price = 300; break;
-            case 17: price = 200; break;
+            case 16: price = 150; break;
+            case 17: price = 300; break;
+            case 18: price = 200; break;
             case 19: price = 100; break;
             case 20: price = 1000; break;
             case 21: price = 500; break;

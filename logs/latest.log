@@ -1,144 +1,576 @@
-[20:11:33] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.7+6-LTS; Eclipse Adoptium Temurin-21.0.7+6) on Windows 11 10.0 (amd64)
-[20:11:33] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.11-69-main@94d0c97 (2025-12-30T20:33:30Z) for Minecraft 1.21.11
-[20:11:34] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
-[20:11:35] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Remapping plugin 'plugins\UtilityTools-1.0.0.jar'...
-[20:11:35] [Paper Plugin Remapper Thread - 1/INFO]: [PluginRemapper] Done remapping plugin 'plugins\UtilityTools-1.0.0.jar' in 154ms.
-[20:11:35] [ServerMain/INFO]: [FileProviderSource] The spark plugin will not be loaded as this server bundles the spark profiler.
-[20:11:35] [ServerMain/INFO]: [PluginInitializerManager] Initialized 5 plugins
-[20:11:35] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (5):
- - Chunky (1.4.40), Geyser-Spigot (2.10.1-SNAPSHOT), UtilityTools (1.0.0), ViaVersion (5.10.1-SNAPSHOT), floodgate (2.2.5-SNAPSHOT (b134-963ae91))
-[20:11:39] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, profilesHost=https://api.mojang.com, name=PROD]
-[20:11:39] [ServerMain/INFO]: Found new data pack file/bukkit, loading it automatically
-[20:11:39] [ServerMain/INFO]: Found new data pack paper, loading it automatically
-[20:11:40] [ServerMain/INFO]: No existing world data, creating new world
-[20:11:40] [ServerMain/INFO]: Loaded 1470 recipes
-[20:11:40] [ServerMain/INFO]: Loaded 1584 advancements
-[20:11:41] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Initialising converters for DataConverter...
-[20:11:41] [ServerMain/INFO]: [ca.spottedleaf.dataconverter.minecraft.datatypes.MCTypeRegistry] Finished initialising converters for DataConverter in 269.9ms
-[20:11:41] [Server thread/INFO]: Starting minecraft server version 1.21.11
-[20:11:41] [Server thread/INFO]: Loading properties
-[20:11:41] [Server thread/INFO]: This server is running Paper version 1.21.11-69-main@94d0c97 (2025-12-30T20:33:30Z) (Implementing API version 1.21.11-R0.1-SNAPSHOT)
-[20:11:41] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
-[20:11:41] [Server thread/INFO]: Using 4 threads for Netty based IO
-[20:11:41] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[20:11:42] [Server thread/INFO]: [MoonriseCommon] Paper is using 3 worker threads, 1 I/O threads
-[20:11:42] [Server thread/INFO]: Default game type: SURVIVAL
-[20:11:42] [Server thread/INFO]: Generating keypair
-[20:11:42] [Server thread/INFO]: Starting Minecraft server on *:25565
-[20:11:42] [Server thread/INFO]: Paper: Using Java compression from Velocity.
-[20:11:42] [Server thread/INFO]: Paper: Using Java cipher from Velocity.
-[20:11:42] [Server thread/INFO]: [floodgate] Loading server plugin floodgate v2.2.5-SNAPSHOT (b134-963ae91)
-[20:11:43] [Server thread/INFO]: [floodgate] Took 637ms to boot Floodgate
-[20:11:43] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.10.1-SNAPSHOT
-[20:11:43] [Server thread/INFO]: [ViaVersion] ViaVersion 5.10.1-SNAPSHOT is now loaded. Registering protocol transformers and injecting...
-[20:11:43] [Via-Mappingloader-1/INFO]: [ViaVersion] Loading block connection mappings ...
-[20:11:43] [Server thread/INFO]: [UtilityTools] Loading server plugin UtilityTools v1.0.0
-[20:11:43] [Server thread/INFO]: [Geyser-Spigot] Loading server plugin Geyser-Spigot v2.10.1-SNAPSHOT
-[20:11:44] [Server thread/INFO]: [Geyser-Spigot] Loading extensions...
-[20:11:44] [Server thread/INFO]: [Geyser-Spigot] Enabled extension EmoteOffhand
-[20:11:44] [Server thread/INFO]: [Geyser-Spigot] Loaded 1 extension(s)
-[20:11:44] [Server thread/INFO]: [Chunky] Loading server plugin Chunky v1.4.40
-[20:11:44] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[20:11:44] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
-[20:11:44] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
-[20:11:44] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
-[20:11:44] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
-[20:11:44] [Server thread/INFO]: Preparing level "world"
-[20:11:44] [Server thread/INFO]: Selecting spawn point for world 'minecraft:overworld'...
-[20:11:46] [Server thread/INFO]: Selecting spawn point for world 'minecraft:the_nether'...
-[20:11:47] [Server thread/INFO]: Selecting spawn point for world 'minecraft:the_end'...
-[20:11:47] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:overworld'...
-[20:11:47] [Server thread/INFO]: Preparing spawn area: 100%
-[20:11:47] [Server thread/INFO]: Prepared spawn area in 2865 ms
-[20:11:47] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_nether'...
-[20:11:47] [Server thread/INFO]: Preparing spawn area: 100%
-[20:11:47] [Server thread/INFO]: Prepared spawn area in 636 ms
-[20:11:47] [Server thread/INFO]: Loading 0 persistent chunks for world 'minecraft:the_end'...
-[20:11:47] [Server thread/INFO]: Preparing spawn area: 100%
-[20:11:47] [Server thread/INFO]: Prepared spawn area in 205 ms
-[20:11:47] [Server thread/INFO]: Done preparing level "world" (3.156s)
-[20:11:47] [Server thread/INFO]: [floodgate] Enabling floodgate v2.2.5-SNAPSHOT (b134-963ae91)
-[20:11:47] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.10.1-SNAPSHOT
-[20:11:47] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.11 (774)
-[20:11:47] [Server thread/INFO]: [UtilityTools] Enabling UtilityTools v1.0.0
-[20:11:47] [Server thread/INFO]: [UtilityTools] ===========================================
-[20:11:47] [Server thread/INFO]: [UtilityTools]  UtilityTools Plugin da khoi dong!
-[20:11:47] [Server thread/INFO]: [UtilityTools]  TreeCapitator: HOAT DONG
-[20:11:47] [Server thread/INFO]: [UtilityTools]  OreVeinMiner: HOAT DONG
-[20:11:47] [Server thread/INFO]: [UtilityTools]  Hammer 3x3: HOAT DONG
-[20:11:47] [Server thread/INFO]: [UtilityTools]  TorchLight (Duoc Sang): HOAT DONG
-[20:11:47] [Server thread/INFO]: [UtilityTools]  KingMC Features (Economy, Shop, Spawners): HOAT DONG
-[20:11:47] [Server thread/INFO]: [UtilityTools] ===========================================
-[20:11:47] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.10.1-SNAPSHOT
-[20:11:48] [Server thread/INFO]: [Chunky] Enabling Chunky v1.4.40
-[20:11:48] [Server thread/INFO]: [spark] Starting background profiler...
-[20:11:48] [Server thread/INFO]: [spark] The async-profiler engine is not supported for your os/arch (windows11/amd64), so the built-in Java engine will be used instead.
-[20:11:49] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[20:11:49] [Server thread/INFO]: [Geyser-Spigot] 
-[20:11:49] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.10.1-b1172 (git-master-4b27e6f)
-[20:11:49] [Server thread/INFO]: [Geyser-Spigot] 
-[20:11:49] [Server thread/INFO]: [Geyser-Spigot] ******************************************
-[20:11:51] [GeyserServer-3-1/INFO]: [Geyser-Spigot] Started Geyser on UDP port 19132
-[20:11:51] [Server thread/INFO]: [Geyser-Spigot] [emoteoffhand] Loaded EmoteOffhand!
-[20:11:51] [Server thread/INFO]: [Geyser-Spigot] Done (2.251s)! Run /geyser help for help!
-[20:11:51] [Server thread/INFO]: Running delayed init tasks
-[20:11:51] [Server thread/INFO]: Done (18.722s)! For help, type "help"
-[20:11:51] [Craft Scheduler Thread - 2 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
-[20:11:52] [Server thread/INFO]: [ViaVersion] You are running a development version of the plugin, please report any bugs to GitHub.
-[20:11:58] [User Authenticator #0/INFO]: UUID of player trdung2007 is f2f18c50-dd1f-39a1-8d16-29ac615977d5
-[20:12:00] [Server thread/INFO]: trdung2007 joined the game
-[20:12:00] [Server thread/INFO]: trdung2007[/127.0.0.1:49481] logged in with entity id 27 at ([world]40.5, 71.0, 83.5)
-[20:12:28] [Server thread/INFO]: trdung2007 issued server command: /shop
-[20:12:30] [Server thread/INFO]: trdung2007 has made the advancement [Into Fire]
-[20:12:32] [Server thread/INFO]: trdung2007 has reached the goal [Sky's the Limit]
-[20:12:49] [Server thread/INFO]: Set the time to 13000
-[20:13:13] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/642, uuid='b0626c4b-f870-4c94-9594-465d2bddd43f', l='ServerLevel[world]', x=50.50, y=48.00, z=145.40, cpos=[3, 9], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
-[20:13:23] [Server thread/INFO]: trdung2007 issued server command: /gamemode creative
-[20:13:23] [Server thread/INFO]: [trdung2007: Set own game mode to Creative Mode]
-[20:13:32] [Server thread/INFO]: trdung2007 issued server command: /locate biome minecraft:sulfur_caves
-[20:15:01] [Server thread/INFO]: trdung2007 lost connection: Disconnected
-[20:15:01] [Server thread/INFO]: trdung2007 left the game
-[20:15:52] [Server thread/INFO]: Stopping the server
-[20:15:52] [Server thread/INFO]: Stopping server
-[20:15:52] [Server thread/INFO]: [Chunky] Disabling Chunky v1.4.40
-[20:15:52] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.10.1-SNAPSHOT
-[20:15:52] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
-[20:15:52] [Server thread/INFO]: [Geyser-Spigot] Disabled extension EmoteOffhand
-[20:15:52] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
-[20:15:52] [Server thread/INFO]: [UtilityTools] Disabling UtilityTools v1.0.0
-[20:15:52] [Server thread/INFO]: [UtilityTools] UtilityTools Plugin da tat.
-[20:15:52] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.10.1-SNAPSHOT
-[20:15:52] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
-[20:15:52] [Server thread/INFO]: [floodgate] Disabling floodgate v2.2.5-SNAPSHOT (b134-963ae91)
-[20:15:52] [Server thread/INFO]: Saving players
-[20:15:52] [Server thread/INFO]: Saving worlds
-[20:15:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world' in 0.01s
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world'
-[20:15:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_nether'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_nether'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_nether'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_nether' in 0.00s
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_nether'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_nether'
-[20:15:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'world_the_end'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'world_the_end'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'world_the_end'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'world_the_end' in 0.00s
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'world_the_end'
-[20:15:52] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'world_the_end'
-[20:15:52] [WebSocketConnectReadThread-137/INFO]: [Geyser-Spigot] The skin uploader has been closed
-[20:15:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[20:15:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[20:15:52] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[20:15:52] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[20:15:52] [Server thread/INFO]: Waiting for all RegionFile I/O tasks to complete...
-[20:15:52] [Server thread/INFO]: All RegionFile I/O tasks to complete
-[20:15:52] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
-[20:15:52] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...
+[00:00:07] [Server thread/INFO]: Named entity Drowned['☠ Quỷ Vương Zombie ☠ [ 198/200 ❤ ]'/16751, uuid='fa9378a3-6dde-41ed-a042-8a7d9ca8097d', l='ServerLevel[world]', x=-28.64, y=59.17, z=67.49, cpos=[-2, 4], tl=3794, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 198/200 ❤ ] was blown up by VUADITVIETNAM using [Chùy Quỷ Dữ]
+[00:00:35] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:00:36] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/17788, uuid='cba163b6-c9f7-41eb-ab70-067d71b748d9', l='ServerLevel[world]', x=-1111.50, y=43.00, z=3632.50, cpos=[-70, 227], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:00:57] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:01:01] [Server thread/INFO]: Villager Villager['Farmer'/14903, uuid='f80381ca-cf61-4695-859b-1e292b51a430', l='ServerLevel[world]', x=-1035.74, y=67.25, z=3606.51, cpos=[-65, 225], tl=10342, v=true] died, message: 'Farmer was speared by Husk'
+[00:01:16] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:01:20] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:01:29] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:01:29] [Server thread/INFO]: =================================
+[00:01:29] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[00:01:29] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[00:01:29] [Server thread/INFO]: X: 29, Y: 74, Z: 67
+[00:01:29] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[00:01:29] [Server thread/INFO]: =================================
+[00:01:40] [Server thread/INFO]: Villager Villager['Nitwit'/14900, uuid='4a8d55e0-46d8-43dd-9ef3-7d9cecd6f498', l='ServerLevel[world]', x=-1055.26, y=70.25, z=3604.32, cpos=[-66, 225], tl=11121, v=true] died, message: 'Nitwit was speared by Husk'
+[00:01:52] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:01:56] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:01:56] [Server thread/INFO]: =================================
+[00:01:56] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[00:01:56] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[00:01:56] [Server thread/INFO]: X: 39, Y: 72, Z: 82
+[00:01:56] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[00:01:56] [Server thread/INFO]: =================================
+[00:02:14] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:02:57] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:02:59] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 2/100 ❤ ]'/18033, uuid='00c91646-cfdd-475e-827e-767913652437', l='ServerLevel[world]', x=21.65, y=71.00, z=72.60, cpos=[1, 4], tl=1799, v=true] died: ☠ Quỷ Vương Xương ☠ [ 2/100 ❤ ] was blown up by ☠ Quỷ Vương Zombie ☠ [ 163/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:03:00] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:03:00] [Server thread/INFO]: =================================
+[00:03:00] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[00:03:00] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[00:03:00] [Server thread/INFO]: X: 42, Y: 74, Z: 80
+[00:03:00] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[00:03:00] [Server thread/INFO]: =================================
+[00:03:05] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:03:12] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ]'/19360, uuid='b8dc6186-edd9-4661-a66e-fb8c239efd0d', l='ServerLevel[world]', x=26.60, y=67.00, z=104.30, cpos=[1, 6], tl=1524, v=true] died: ☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 137/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:03:32] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 3/100 ❤ ]'/18034, uuid='cfa13d2d-1d12-482d-8620-03fabb633340', l='ServerLevel[world]', x=39.60, y=68.00, z=93.60, cpos=[2, 5], tl=2470, v=true] died: ☠ Quỷ Vương Xương ☠ [ 3/100 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 134/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:03:39] [Server thread/INFO]: VUADITVIETNAM has made the advancement [Stone Age]
+[00:03:49] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ]'/18032, uuid='67b859f9-866f-468c-9b44-b4c531e51869', l='ServerLevel[world]', x=31.97, y=67.00, z=67.86, cpos=[1, 4], tl=2803, v=true] died: ☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ] was blown up by ☠ Quỷ Vương Xương ☠ [ 42/100 ❤ ] using [Cung Hủy Diệt]
+[00:04:00] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:04:15] [Server thread/INFO]: trdung2007 has made the advancement [Take Aim]
+[00:04:24] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ]'/18035, uuid='981d3c6b-8044-47a9-a074-e5a91adbfac9', l='ServerLevel[world]', x=34.60, y=65.00, z=59.60, cpos=[2, 3], tl=3505, v=true] died: ☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ] was blown up by ☠ Quỷ Vương Zombie ☠ [ 147/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:04:26] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[00:04:26] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 0/100 ❤ ]'/22211, uuid='dddb5949-c513-4857-9e9a-5c486c0c0a5e', l='ServerLevel[world]', x=33.83, y=70.89, z=107.40, cpos=[2, 6], tl=1725, v=true] died: ☠ Quỷ Vương Xương ☠ [ 0/100 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 168/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:04:33] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
+[00:04:33] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 2/100 ❤ ]'/22212, uuid='2b168cb0-36bf-46f4-9b8a-b6a630a2891e', l='ServerLevel[world]', x=57.45, y=69.00, z=106.27, cpos=[3, 6], tl=1865, v=true] died: ☠ Quỷ Vương Xương ☠ [ 2/100 ❤ ] was blown up by ☠ Quỷ Vương Zombie ☠ [ 146/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:05:01] [Server thread/INFO]: Vandz2404 issued server command: /ell
+[00:05:05] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 2/200 ❤ ]'/19359, uuid='51c4c8fc-5bf7-412c-8fe3-99b60e5fd320', l='ServerLevel[world]', x=51.68, y=67.00, z=99.77, cpos=[3, 6], tl=3773, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 2/200 ❤ ] was blown up by trdung2007 using [Cung Hủy Diệt]
+[00:05:07] [Server thread/INFO]: VUADITVIETNAM was slain by ☠ Quỷ Vương Zombie ☠ [ 168/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:05:21] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:05:26] [Server thread/INFO]: VUADITVIETNAM was slain by ☠ Quỷ Vương Zombie ☠ [ 22/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:05:28] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/24080, uuid='5cff6036-dbe2-4af0-b481-241080c797a7', l='ServerLevel[world]', x=75.40, y=31.00, z=-11.50, cpos=[4, -1], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:05:38] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/24153, uuid='6dc0cb36-60e1-407e-b8a5-90ffccf72a89', l='ServerLevel[world]', x=108.40, y=-36.00, z=104.60, cpos=[6, 6], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:05:40] [Server thread/INFO]: VUADITVIETNAM was slain by ☠ Quỷ Vương Zombie ☠ [ 134/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:05:40] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:05:45] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 5/200 ❤ ]'/19358, uuid='b5827142-a07f-4436-9d45-9bcda069622d', l='ServerLevel[world]', x=33.78, y=66.00, z=105.22, cpos=[2, 6], tl=4581, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 5/200 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:06:04] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:06:14] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:06:19] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:06:31] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 0/200 ❤ ]'/19356, uuid='82cd73d5-39e5-44e1-897c-99af8ca06ee7', l='ServerLevel[world]', x=25.72, y=67.00, z=105.33, cpos=[1, 6], tl=5496, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 0/200 ❤ ] was doomed to fall by ☠ Quỷ Vương Zombie ☠ [ 8/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:06:35] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:06:35] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/24579, uuid='98df89c6-d20f-4f9d-aca0-e7b9bf13b917', l='ServerLevel[world]', x=-23.50, y=7.00, z=114.40, cpos=[-2, 7], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:06:35] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
+[00:06:35] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 5/200 ❤ ]'/22215, uuid='88ff4f2e-a1a5-4ef9-b362-23258bd42aff', l='ServerLevel[world]', x=34.81, y=66.54, z=106.13, cpos=[2, 6], tl=4304, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 5/200 ❤ ] was slain by ☠ Quỷ Vương Zombie ☠ [ 102/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:06:39] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:06:48] [Server thread/INFO]: VUADITVIETNAM has made the advancement [Take Aim]
+[00:06:51] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 1/200 ❤ ]'/18036, uuid='b4d42728-90a2-4186-ae2a-c3910b3af55a', l='ServerLevel[world]', x=12.46, y=72.00, z=71.00, cpos=[0, 4], tl=6446, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 1/200 ❤ ] was blown up by VUADITVIETNAM using [Cung Hủy Diệt]
+[00:07:23] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:26] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:30] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:34] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:37] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:42] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:46] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:50] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:53] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:07:56] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:00] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:03] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:07] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:11] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:16] [Server thread/INFO]: Vandz2404 issued server command: /sell\
+[00:08:18] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:21] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:26] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:37] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:44] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:08:55] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:09:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/25295, uuid='0f265d36-dff8-49ce-8f6e-32bdba01b6bb', l='ServerLevel[world]', x=-1039.50, y=56.00, z=3713.50, cpos=[-65, 232], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:09:02] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:09:04] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/25335, uuid='5ece822a-649f-4bf5-bfd2-6ac88d2b6cea', l='ServerLevel[world]', x=7.40, y=57.00, z=97.50, cpos=[0, 6], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:09:09] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 1 Boss
+[00:09:09] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ]'/22213, uuid='99e059e2-7346-4e8b-9d2b-f8323d57d6ce', l='ServerLevel[world]', x=-70.40, y=74.00, z=111.55, cpos=[-5, 6], tl=7368, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 3/200 ❤ ] was blown up by VUADITVIETNAM using [Cung Hủy Diệt]
+[00:09:19] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:09:28] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:09:37] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:10:01] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:10:08] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:10:12] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:10:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/30185, uuid='2548ebe8-e3c7-4f16-96f0-e8e59a6260c1', l='ServerLevel[world]', x=-1067.60, y=-22.00, z=3626.50, cpos=[-67, 226], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:10:30] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:11:19] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/31032, uuid='2ac5e7a7-b8e9-4ded-adf1-0c8c7f793c6f', l='ServerLevel[world]', x=-34.50, y=2.00, z=124.50, cpos=[-3, 7], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:11:45] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:11:47] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/31291, uuid='367c2c06-6952-417e-8071-9ff18bef8827', l='ServerLevel[world]', x=-210.40, y=31.00, z=8.50, cpos=[-14, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:11:56] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:11:58] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[00:11:58] [Server thread/INFO]: Vandz2404 issued server command: /tpa VUADITVIETNAM
+[00:12:03] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/32062, uuid='1ac22107-e8cd-4cba-9e23-e3ba250b8ecd', l='ServerLevel[world]', x=-421.40, y=-8.00, z=-37.40, cpos=[-27, -3], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:12:07] [Server thread/INFO]: Vandz2404 issued server command: /tpa trdung
+[00:12:33] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:12:34] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[00:12:45] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[00:13:37] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[00:13:47] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:13:51] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:13:54] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:13:54] [Server thread/INFO]: =================================
+[00:13:54] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[00:13:54] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[00:13:54] [Server thread/INFO]: X: -418, Y: 63, Z: -53
+[00:13:54] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[00:13:54] [Server thread/INFO]: =================================
+[00:13:54] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[00:13:54] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/32748, uuid='1b491c77-71a8-4a3d-8d1b-fbbba856bf10', l='ServerLevel[world]', x=-417.84, y=64.00, z=-47.84, cpos=[-27, -3], tl=1, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:13:54] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
+[00:13:54] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/32749, uuid='fd31bf2a-55cc-43a0-aca1-9ba169be280b', l='ServerLevel[world]', x=-420.92, y=64.00, z=-57.33, cpos=[-27, -4], tl=1, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:13:54] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
+[00:13:54] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/32747, uuid='5e4e9a9f-2141-4ddb-a5ed-a35cb826607e', l='ServerLevel[world]', x=-419.07, y=64.00, z=-52.47, cpos=[-27, -4], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:14:12] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:14:15] [Server thread/INFO]: trdung2007 issued server command: /raid
+[00:14:15] [Server thread/INFO]: =================================
+[00:14:15] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[00:14:15] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[00:14:15] [Server thread/INFO]: X: -416, Y: 63, Z: -51
+[00:14:15] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[00:14:15] [Server thread/INFO]: =================================
+[00:14:16] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[00:14:16] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/32857, uuid='02836c3f-03be-45bb-a6d1-bc3abc2e36e9', l='ServerLevel[world]', x=-418.76, y=64.00, z=-45.05, cpos=[-27, -3], tl=1, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:14:16] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
+[00:14:16] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/32858, uuid='586db851-23c1-4b77-afd0-78e1c10e4db9', l='ServerLevel[world]', x=-418.06, y=64.00, z=-48.44, cpos=[-27, -4], tl=1, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:14:16] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
+[00:14:16] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/32860, uuid='53f12454-dcf6-4ab4-8764-c9c12a398679', l='ServerLevel[world]', x=-418.09, y=64.00, z=-52.29, cpos=[-27, -4], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:14:21] [Server thread/INFO]: trdung2007 issued server command: /raid stop
+[00:14:40] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:14:44] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:14:49] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:14:52] [Server thread/INFO]: VUADITVIETNAM was blown up by trdung2007 using [Chùy Quỷ Dữ]
+[00:14:52] [Server thread/INFO]: VUADITVIETNAM died
+[00:14:54] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:00] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:03] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[00:15:05] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:09] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:24] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:30] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:34] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:37] [Server thread/INFO]: trdung2007 issued server command: /sell
+[00:15:39] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:42] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/34322, uuid='acee970b-469b-44b0-80f6-9ac0b5b9be26', l='ServerLevel[world]', x=-380.40, y=-28.00, z=4.60, cpos=[-24, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:15:43] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:48] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:53] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:15:56] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:01] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:05] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:10] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:13] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:20] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:23] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[00:16:25] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:16:27] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:16:34] [Server thread/INFO]: VUADITVIETNAM was blown up by Vandz2404 using [Chùy Quỷ Dữ]
+[00:16:34] [Server thread/INFO]: VUADITVIETNAM died
+[00:16:43] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[00:17:20] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/35148, uuid='56ab7976-b75c-4b7f-b718-a9d0870f84d2', l='ServerLevel[world]', x=-358.40, y=-40.00, z=-44.40, cpos=[-23, -3], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:17:27] [Server thread/INFO]: Named entity Drowned['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/34246, uuid='973d42a8-71c1-459b-a3c0-79b99508560a', l='ServerLevel[world]', x=-411.05, y=60.69, z=-44.30, cpos=[-26, -3], tl=2823, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] was blown up by VUADITVIETNAM using [Cung Hủy Diệt]
+[00:17:35] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/36688, uuid='6b809203-4864-42ce-8104-756fcd1efb3b', l='ServerLevel[world]', x=-238.40, y=6.00, z=-76.50, cpos=[-15, -5], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:18:11] [Server thread/INFO]: trdung2007 issued server command: /tpa
+[00:18:20] [Server thread/INFO]: trdung2007 issued server command: /tpa Vandz2404
+[00:18:37] [Server thread/INFO]: trdung2007 was slain by Vandz2404 using [Chùy Quỷ Dữ]
+[00:18:59] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:19:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/39042, uuid='7c871a7f-5655-4b43-8fe9-6559de9cc02c', l='ServerLevel[world]', x=-410.60, y=2.00, z=-142.60, cpos=[-26, -9], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:19:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/39043, uuid='a87282df-716e-475f-a362-2e0bdb66dbda', l='ServerLevel[world]', x=-410.60, y=2.00, z=-142.60, cpos=[-26, -9], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:19:20] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/39055, uuid='5ea2e007-dc36-4578-9b27-4902d126cb8b', l='ServerLevel[world]', x=-505.60, y=-17.00, z=-48.60, cpos=[-32, -4], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:19:34] [Server thread/INFO]: Named entity Drowned['☠ Quỷ Vương Zombie ☠ [ 16/200 ❤ ]'/34670, uuid='be55920f-575a-44d9-a44e-b20cb5957bfb', l='ServerLevel[world]', x=-339.16, y=60.98, z=-37.44, cpos=[-22, -3], tl=3503, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 16/200 ❤ ] was blown up by VUADITVIETNAM using [Cung Hủy Diệt]
+[00:19:36] [Server thread/INFO]: trdung2007 issued server command: /givebow
+[00:19:40] [Server thread/INFO]: trdung2007 was slain by ☠ Quỷ Vương Zombie ☠ [ 24/200 ❤ ] using [Chùy Quỷ Dữ]
+[00:19:54] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:19:59] [Server thread/INFO]: trdung2007 issued server command: /givemace
+[00:20:04] [Server thread/INFO]: trdung2007 issued server command: /givebow
+[00:20:09] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:20:24] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/40040, uuid='73183ae4-d3c7-4b54-803f-34dae2cc356a', l='ServerLevel[world]', x=-421.50, y=-9.00, z=-69.50, cpos=[-27, -5], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:20:27] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:20:39] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/40392, uuid='f054b57b-0ef8-456e-a7c7-15709e68b3d5', l='ServerLevel[world]', x=-451.40, y=-19.00, z=-114.50, cpos=[-29, -8], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:21:00] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/40741, uuid='9aa216a3-dae8-4161-ae88-8eb8d9caec55', l='ServerLevel[world]', x=-74.60, y=-46.00, z=64.60, cpos=[-5, 4], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:21:04] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[00:21:36] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/41001, uuid='943304e8-381b-44de-9e93-a12a5166dd02', l='ServerLevel[world]', x=-403.50, y=22.00, z=-151.50, cpos=[-26, -10], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:22:11] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/41441, uuid='6c7b28a4-dcd7-47d9-bead-751aa8fbd4c9', l='ServerLevel[world]', x=-224.40, y=29.00, z=-72.60, cpos=[-15, -5], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:22:11] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/41442, uuid='8bcdb2a1-e556-408d-bbff-68082a939b4f', l='ServerLevel[world]', x=-224.40, y=29.00, z=-72.60, cpos=[-15, -5], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:22:42] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/41786, uuid='5c68c4fc-d01b-43c2-9204-edccc939d547', l='ServerLevel[world]', x=-194.50, y=23.00, z=-67.50, cpos=[-13, -5], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:23:11] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/42626, uuid='493623d5-6ce4-4f81-9e09-30f483de7ea1', l='ServerLevel[world]', x=-795.60, y=-10.00, z=10.60, cpos=[-50, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:23:12] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/42709, uuid='12dfe996-923d-4274-82d7-791ca5f53041', l='ServerLevel[world]', x=-813.60, y=-13.00, z=88.50, cpos=[-51, 5], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:23:41] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/44778, uuid='61b3d7b3-5c4f-410a-a1a9-f307c3cea5e6', l='ServerLevel[world]', x=-297.60, y=-44.00, z=-99.60, cpos=[-19, -7], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:23:41] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:23:45] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/45338, uuid='069f510a-41bf-4fd4-9892-a02a50b7ef0b', l='ServerLevel[world]', x=-623.40, y=24.00, z=176.40, cpos=[-39, 11], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:23:45] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/45340, uuid='4b969839-e922-43dc-ad05-9d875adf75a7', l='ServerLevel[world]', x=-623.40, y=24.00, z=176.40, cpos=[-39, 11], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:23:55] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:24:17] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:24:25] [Server thread/INFO]: VUADITVIETNAM issued server command: /shp[
+[00:24:29] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:24:42] [Server thread/INFO]: Vandz2404 has made the advancement [Diamonds!]
+[00:25:17] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/47314, uuid='7316845e-bda0-4509-8946-8641acba982a', l='ServerLevel[world]', x=-1736.40, y=-14.00, z=633.60, cpos=[-109, 39], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:25:22] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/47418, uuid='3b087005-b286-466a-9629-5548c362408b', l='ServerLevel[world]', x=-357.40, y=-31.00, z=-81.50, cpos=[-23, -6], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:25:23] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/47421, uuid='46bee251-3e13-464d-9f0e-224fbdfb4bca', l='ServerLevel[world]', x=-525.50, y=3.00, z=-93.50, cpos=[-33, -6], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:25:27] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/47455, uuid='2e5d1a0a-8864-49a4-a164-16d1a4a985cb', l='ServerLevel[world]', x=-453.50, y=-33.00, z=13.60, cpos=[-29, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:25:34] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/47562, uuid='cdde74fe-40a5-4c5a-8ab5-e378c48798a4', l='ServerLevel[world]', x=-1718.60, y=55.00, z=707.50, cpos=[-108, 44], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:26:10] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa dungdz2007
+[00:26:28] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[00:26:35] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:26:39] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/48749, uuid='fb11623b-6fa8-4175-b94b-345a133bb3db', l='ServerLevel[world]', x=-453.50, y=-9.00, z=-122.50, cpos=[-29, -8], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:26:39] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/48750, uuid='a45e4a89-c3d7-4a67-a142-d120d82708b1', l='ServerLevel[world]', x=-453.50, y=-9.00, z=-122.50, cpos=[-29, -8], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:26:41] [Server thread/INFO]: trdung2007 has made the advancement [Getting an Upgrade]
+[00:26:43] [Server thread/INFO]: Vandz2404 issued server command: /rtp
+[00:26:46] [Server thread/INFO]: VUADITVIETNAM has made the advancement [Getting an Upgrade]
+[00:27:28] [Server thread/INFO]: trdung2007 issued server command: /hammer trdung2007
+[00:27:50] [Server thread/INFO]: trdung2007 issued server command: /hammer give VUADITVIETNAM diamond
+[00:27:56] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/49476, uuid='1f8a2ef7-2ae9-4163-83c2-794e8b4cb9b0', l='ServerLevel[world]', x=-481.40, y=-5.00, z=5.40, cpos=[-31, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:28:03] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:28:25] [Server thread/INFO]: trdung2007 issued server command: /
+[00:28:32] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/49621, uuid='574fe6ca-df48-4d80-8c2b-7572a4fffd74', l='ServerLevel[world]', x=1132.50, y=31.00, z=-2778.50, cpos=[70, -174], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:28:40] [Server thread/INFO]: trdung2007 issued server command: /hammer give trdung2007 diamond
+[00:29:05] [Server thread/INFO]: trdung2007 issued server command: /hammer give trdung2007 diamond
+[00:29:10] [Server thread/INFO]: Vandz2404 has made the advancement [Acquire Hardware]
+[00:29:20] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:29:31] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/50496, uuid='28093b09-bf78-4079-b3d5-4c1a5d92cd5a', l='ServerLevel[world]', x=1103.60, y=38.00, z=-2774.60, cpos=[68, -174], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:29:37] [Server thread/INFO]: Vandz2404 has made the advancement [Cover Me with Diamonds]
+[00:29:44] [Server thread/INFO]: trdung2007 issued server command: /sell
+[00:30:14] [Server thread/INFO]: trdung2007 issued server command: /hammer give trdung2007 diamond
+[00:30:14] [Server thread/INFO]: VUADITVIETNAM has made the advancement [Diamonds!]
+[00:30:40] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/50925, uuid='67dff5f9-6f47-446d-800c-834b050bb0d0', l='ServerLevel[world]', x=1027.60, y=103.00, z=-2847.50, cpos=[64, -178], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:31:58] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[00:32:03] [Server thread/INFO]: Vandz2404 issued server command: /sethome van1
+[00:32:05] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:32:28] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:34:34] [Server thread/INFO]: VUADITVIETNAM experienced kinetic energy
+[00:34:41] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/53531, uuid='34e9c81c-cdc7-41c0-8a44-f5677671106c', l='ServerLevel[world]', x=41.60, y=19.00, z=89.60, cpos=[2, 5], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:34:41] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/53533, uuid='e6752be1-bee7-49f0-8f8a-2b355339302b', l='ServerLevel[world]', x=41.60, y=19.00, z=89.60, cpos=[2, 5], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:34:42] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/53612, uuid='fef6e543-5105-4627-afa5-415c5978bca7', l='ServerLevel[world]', x=4.50, y=-7.00, z=166.60, cpos=[0, 10], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:34:48] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[00:35:57] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/54334, uuid='84818298-164d-4897-83cc-39b764e21496', l='ServerLevel[world]', x=1129.50, y=-17.00, z=-2930.50, cpos=[70, -184], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:36:46] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[00:41:06] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:41:08] [Server thread/INFO]: Vandz2404 has made the advancement [Ice Bucket Challenge]
+[00:42:08] [Server thread/INFO]: Vandz2404 has made the advancement [Hot Stuff]
+[00:42:37] [Server thread/INFO]: trdung2007 issued server command: /sell
+[00:43:08] [Server thread/INFO]: Vandz2404 has made the advancement [We Need to Go Deeper]
+[00:43:09] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/58466, uuid='f3086b17-67ae-4d48-8dbb-f0ef5b2633b8', l='ServerLevel[world_nether]', x=91.50, y=73.00, z=-341.50, cpos=[5, -22], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:43:17] [Server thread/INFO]: trdung2007 issued server command: /shop
+[00:44:56] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/59980, uuid='c6dbdb9f-c04f-42fe-92a3-49927b5d2014', l='ServerLevel[world]', x=-530.60, y=21.00, z=-153.40, cpos=[-34, -10], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:44:56] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/59982, uuid='0c55ce50-781f-47a8-9354-49bf9387adc5', l='ServerLevel[world]', x=-530.60, y=21.00, z=-153.40, cpos=[-34, -10], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:44:56] [Server thread/INFO]: Vandz2404 has made the advancement [Those Were the Days]
+[00:45:21] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[00:48:34] [Server thread/INFO]: Vandz2404 has made the advancement [War Pigs]
+[00:49:53] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/62160, uuid='573a1840-6465-447c-9700-cf08e162d6b4', l='ServerLevel[world]', x=-424.60, y=16.00, z=-134.40, cpos=[-27, -9], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:50:22] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[00:50:22] [Server thread/INFO]: VUADITVIETNAM has made the advancement [We Need to Go Deeper]
+[00:50:24] [Server thread/INFO]: VUADITVIETNAM has made the advancement [Those Were the Days]
+[00:50:33] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[00:52:27] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[00:54:59] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/64634, uuid='9dd986f0-c98c-4169-90b2-b8627029c563', l='ServerLevel[world_nether]', x=1013.50, y=57.00, z=-848.50, cpos=[63, -54], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:55:33] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/64885, uuid='e5c68616-d7db-445b-bcf5-4c0ff484dd3f', l='ServerLevel[world]', x=-505.50, y=-40.00, z=11.50, cpos=[-32, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:55:33] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/64886, uuid='654d6991-87e9-42c5-9eab-190697082aeb', l='ServerLevel[world]', x=-505.50, y=-40.00, z=11.50, cpos=[-32, 0], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:56:00] [Server thread/INFO]: trdung2007 issued server command: /
+[00:56:07] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/65153, uuid='d460622b-a591-4ecc-8b74-4d56edf4dc6f', l='ServerLevel[world]', x=-439.60, y=-12.00, z=7.50, cpos=[-28, 0], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[00:56:58] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[00:57:22] [Server thread/INFO]: Vandz2404 has made the advancement [Oh Shiny]
+[00:57:29] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/65744, uuid='ab27de17-ad92-453e-a538-22060e3f2dbb', l='ServerLevel[world]', x=-457.50, y=-8.00, z=-129.60, cpos=[-29, -9], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[00:59:33] [Server thread/INFO]: Vandz2404 issued server command: /shop\
+[00:59:35] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[01:00:29] [Server thread/INFO]: Vandz2404 has completed the challenge [Hot Tourist Destinations]
+[01:00:57] [Server thread/INFO]: Vandz2404 has made the advancement [A Terrible Fortress]
+[01:01:03] [Server thread/INFO]: Vandz2404 has made the advancement [Into Fire]
+[01:05:55] [Server thread/INFO]: Vandz2404 issued server command: /rtp
+[01:05:57] [Server thread/INFO]: Vandz2404 has completed the challenge [Subspace Bubble]
+[01:06:03] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[01:06:31] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/70050, uuid='d7c79cff-87f1-4c43-913f-98929819663a', l='ServerLevel[world]', x=-503.60, y=-36.00, z=-64.50, cpos=[-32, -5], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:06:37] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/70437, uuid='a632c611-e975-46d2-80a8-f0090a1d745e', l='ServerLevel[world]', x=3470.50, y=42.00, z=4205.50, cpos=[216, 262], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:06:54] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/70950, uuid='7ab1ec3f-a5a0-4612-80f9-2fdb77fb9efe', l='ServerLevel[world]', x=3426.40, y=39.00, z=4157.50, cpos=[214, 259], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:07:02] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/71481, uuid='783813f9-533f-49b0-bd56-ef502d37c320', l='ServerLevel[world]', x=3703.60, y=-4.00, z=4019.40, cpos=[231, 251], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:07:23] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/72071, uuid='79a6f6e3-3447-44dc-a4e7-6a3d27c03648', l='ServerLevel[world]', x=3711.60, y=16.00, z=3816.40, cpos=[231, 238], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:07:32] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/72451, uuid='f0a5eff4-04d8-46ed-adef-774a0a8edef4', l='ServerLevel[world]', x=3877.60, y=31.00, z=3748.40, cpos=[242, 234], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:07:51] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/72853, uuid='de95d9dd-5db6-49f3-bf8c-cba63fb93948', l='ServerLevel[world]', x=3853.40, y=8.00, z=3584.50, cpos=[240, 224], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:08:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/73426, uuid='197840d0-1121-409d-81e5-65958c973598', l='ServerLevel[world]', x=4153.40, y=29.00, z=3414.50, cpos=[259, 213], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:08:00] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/73441, uuid='bbf3eaaa-fd7b-4ea3-bafb-72c94c4d2633', l='ServerLevel[world]', x=4153.40, y=29.00, z=3414.50, cpos=[259, 213], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:08:04] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/73678, uuid='8bbfbefd-6fb6-4588-b556-3db72e068977', l='ServerLevel[world]', x=4176.50, y=20.00, z=3438.50, cpos=[261, 214], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:08:22] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/74191, uuid='cfa20110-7db1-4e61-b09e-c9f01c0efe9a', l='ServerLevel[world]', x=4114.60, y=-17.00, z=3265.50, cpos=[257, 204], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:08:22] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/74193, uuid='9127f362-fca3-48fa-aa5f-8ecbcdb2107c', l='ServerLevel[world]', x=4114.60, y=-17.00, z=3265.50, cpos=[257, 204], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:08:44] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/75084, uuid='d8095175-00ca-4edd-ade8-3fe5ca961254', l='ServerLevel[world]', x=4019.60, y=19.00, z=2929.60, cpos=[251, 183], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:08:44] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/75110, uuid='46bcef23-9441-408b-8702-39c366e78cad', l='ServerLevel[world]', x=3919.50, y=45.00, z=3035.50, cpos=[244, 189], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:08:49] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/75392, uuid='68af44cd-1a1a-4c9a-aa42-c43582238626', l='ServerLevel[world]', x=4005.50, y=26.00, z=2941.60, cpos=[250, 183], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:09:08] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/75978, uuid='4009d2a7-4289-44e3-9f4e-94f85317ebbe', l='ServerLevel[world]', x=4042.60, y=27.00, z=2909.40, cpos=[252, 181], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:09:26] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/76246, uuid='08e943d8-7cf5-494f-8f08-e8e2f3e16681', l='ServerLevel[world]', x=-468.40, y=-48.00, z=15.60, cpos=[-30, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:11:10] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/77439, uuid='ff91463e-0ad7-4c8e-b4fb-1801c8dcf85b', l='ServerLevel[world]', x=-430.50, y=-16.00, z=-66.60, cpos=[-27, -5], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:11:30] [Server thread/INFO]: trdung2007 has made the advancement [Diamonds!]
+[01:11:41] [Server thread/INFO]: trdung2007 issued server command: /tpa
+[01:11:51] [Server thread/INFO]: trdung2007 issued server command: /tpa
+[01:11:55] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM \
+[01:11:56] [Server thread/INFO]: Vandz2404 has made the advancement [Eye Spy]
+[01:11:59] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:12:14] [Server thread/INFO]: Vandz2404 has made the advancement [The End?]
+[01:12:15] [Server thread/INFO]: Scanning for legacy world dragon fight...
+[01:12:15] [Server thread/INFO]: Found that the dragon has not yet been killed in this world.
+[01:14:03] [Server thread/INFO]: trdung2007 issued server command: /sell
+[01:16:00] [Server thread/INFO]: Vandz2404 has made the advancement [Free the End]
+[01:18:04] [Server thread/INFO]: Vandz2404 has reached the goal [The Next Generation]
+[01:18:15] [Server thread/INFO]: VUADITVIETNAM tried to swim in lava
+[01:18:19] [Server thread/INFO]: Vandz2404 issued server command: /tpa trdung2007
+[01:18:28] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[01:18:30] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:18:41] [Server thread/INFO]: VUADITVIETNAM burned to death
+[01:18:53] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[01:19:01] [Server thread/INFO]: VUADITVIETNAM tried to swim in lava
+[01:19:08] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[01:19:44] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[01:19:46] [Server thread/INFO]: Vandz2404 issued server command: /rtp
+[01:19:55] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[01:19:58] [Server thread/INFO]: trdung2007 issued server command: /raid
+[01:19:58] [Server thread/INFO]: =================================
+[01:19:58] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[01:19:58] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[01:19:58] [Server thread/INFO]: X: -374, Y: -59, Z: -19
+[01:19:58] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[01:19:58] [Server thread/INFO]: =================================
+[01:19:58] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[01:19:58] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/84507, uuid='8105ca60-4d1b-498d-be53-6697daccb224', l='ServerLevel[world]', x=-367.35, y=-58.00, z=-25.26, cpos=[-23, -2], tl=1, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:19:58] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
+[01:19:58] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/84508, uuid='0617047c-2f11-4c11-8aeb-a879765fbb66', l='ServerLevel[world]', x=-375.86, y=-58.00, z=-24.73, cpos=[-24, -2], tl=1, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:19:58] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
+[01:19:58] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/84509, uuid='9b63393c-8de6-4f84-a643-d9665dd0b7d8', l='ServerLevel[world]', x=-375.71, y=-58.00, z=-22.47, cpos=[-24, -2], tl=1, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:19:58] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 1 Boss
+[01:19:58] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/84510, uuid='d880719f-bcc1-4eac-9076-c6964158dd47', l='ServerLevel[world]', x=-370.35, y=-58.00, z=-19.99, cpos=[-24, -2], tl=1, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:19:58] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 0 Boss
+[01:19:58] [Server thread/INFO]: =================================
+[01:19:58] [Server thread/INFO]: 🎉 CUỘC ĐỘT KÍCH ĐÃ BỊ ĐẨY LÙI 🎉
+[01:19:58] [Server thread/INFO]: Cả 5 Quỷ Vương đã bị tiêu diệt!
+[01:19:58] [Server thread/INFO]: =================================
+[01:19:58] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/84511, uuid='363ebad8-d5ab-47b0-a492-f11d18ac9f86', l='ServerLevel[world]', x=-368.57, y=-58.00, z=-19.26, cpos=[-24, -2], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:20:08] [Server thread/INFO]: Vandz2404 issued server command: /tpa trdung2007
+[01:20:14] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/84580, uuid='ebdcf20c-8a8a-423b-a721-1b6d5ea7c5eb', l='ServerLevel[world]', x=-478.40, y=-10.00, z=10.40, cpos=[-30, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:20:14] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/84581, uuid='6871d36b-aac6-4740-8b52-01df02de925c', l='ServerLevel[world]', x=-478.40, y=-10.00, z=10.40, cpos=[-30, 0], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:20:21] [Server thread/INFO]: VUADITVIETNAM issued server command: /rtp
+[01:20:27] [Server thread/INFO]: trdung2007 issued server command: /hammer give trdung2007 diamond
+[01:20:41] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:20:44] [Server thread/INFO]: Vandz2404 issued server command: /rtp
+[01:20:55] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/85832, uuid='64e1cb21-24a3-4b94-9370-b11a8a130ce2', l='ServerLevel[world]', x=-4192.50, y=20.00, z=2663.50, cpos=[-263, 166], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:20:55] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/85856, uuid='990f08ec-2a17-4487-a1e1-060a6f21827d', l='ServerLevel[world]', x=-4290.40, y=-50.00, z=2718.40, cpos=[-269, 169], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:21:07] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/86177, uuid='970dcf28-f8f8-4869-b476-0eca8a6ee9ab', l='ServerLevel[world]', x=-4168.40, y=-25.00, z=2655.50, cpos=[-261, 165], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:21:40] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[01:21:50] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/86741, uuid='879f6b3a-c184-4e4b-a1bc-8df3d1bfed9d', l='ServerLevel[world]', x=3738.60, y=105.00, z=-979.50, cpos=[233, -62], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:21:50] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[01:22:06] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/86776, uuid='e151310d-30d5-4993-b552-e6932661240c', l='ServerLevel[world]', x=3757.50, y=31.00, z=-1131.50, cpos=[234, -71], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:22:11] [Server thread/INFO]: trdung2007 issued server command: /shop
+[01:22:15] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/86805, uuid='598b5a52-9a29-4ceb-aba4-0bacde36e486', l='ServerLevel[world]', x=-4019.40, y=5.00, z=2934.60, cpos=[-252, 183], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:22:15] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/86821, uuid='9e1db5af-56bf-4a39-9033-ee632d6575ff', l='ServerLevel[world]', x=-4085.60, y=-45.00, z=2862.50, cpos=[-256, 178], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:22:15] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/86837, uuid='76bbf687-47a1-4826-a607-0555d7da683e', l='ServerLevel[world]', x=-4058.50, y=-5.00, z=2782.50, cpos=[-254, 173], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:22:15] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/86838, uuid='20388278-14aa-4aad-907f-3aa3bc8c5b0f', l='ServerLevel[world]', x=-4058.50, y=-5.00, z=2782.50, cpos=[-254, 173], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:22:41] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/87459, uuid='857f3afe-8324-4c7c-9039-704f10ec89b5', l='ServerLevel[world]', x=-4010.60, y=7.00, z=2467.50, cpos=[-251, 154], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:22:44] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/87544, uuid='58d3706e-fecf-48ba-82b5-764fa5195784', l='ServerLevel[world]', x=-4022.60, y=2.00, z=2432.50, cpos=[-252, 152], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:22:44] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/87546, uuid='26bf4487-55d6-4125-bf1d-24596ab907df', l='ServerLevel[world]', x=-4022.60, y=2.00, z=2432.50, cpos=[-252, 152], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:23:08] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[01:23:11] [Server thread/INFO]: trdung2007 issued server command: /shop
+[01:23:39] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/88686, uuid='db67deca-0c90-4a63-8850-9d835be00d9d', l='ServerLevel[world]', x=-4115.60, y=-36.00, z=2115.60, cpos=[-258, 132], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:23:46] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/88747, uuid='ffa94b3d-9c90-44a1-a4d1-b4418f896f82', l='ServerLevel[world]', x=-4152.60, y=-30.00, z=1976.40, cpos=[-260, 123], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:23:48] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/88827, uuid='e50ccc42-a767-484e-ab33-0cdff3f10a26', l='ServerLevel[world]', x=-4187.50, y=4.00, z=2011.40, cpos=[-262, 125], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:24:04] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/89635, uuid='89221ccc-25bc-4214-9fcf-5c409d0dee02', l='ServerLevel[world]', x=-4334.50, y=-18.00, z=1566.50, cpos=[-271, 97], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:24:23] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/90144, uuid='a416dfa2-9eba-48de-a624-17b20be9f8b2', l='ServerLevel[world]', x=-4473.50, y=-6.00, z=1688.50, cpos=[-280, 105], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:24:45] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/90977, uuid='b685e19c-efdd-4833-90c0-afbc6afe61ec', l='ServerLevel[world]', x=-4381.40, y=-12.00, z=2024.40, cpos=[-274, 126], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:24:46] [Server thread/INFO]: trdung2007 issued server command: /raid
+[01:24:46] [Server thread/INFO]: =================================
+[01:24:46] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[01:24:46] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[01:24:46] [Server thread/INFO]: X: 3779, Y: 120, Z: -1042
+[01:24:46] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[01:24:46] [Server thread/INFO]: =================================
+[01:24:46] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[01:24:46] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/91008, uuid='c1e1cd56-efda-495a-990c-b5f2bdc8ab48', l='ServerLevel[world]', x=3773.78, y=121.00, z=-1033.92, cpos=[235, -65], tl=1, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:25:15] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[01:25:51] [Server thread/INFO]: trdung2007 was doomed to fall by ☠ Quỷ Vương Zombie ☠ [ 127/200 ❤ ] using [Chùy Quỷ Dữ]
+[01:25:59] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/91761, uuid='8ef06b96-bf13-4ce7-bef5-81d2290398c8', l='ServerLevel[world]', x=100.40, y=36.00, z=92.50, cpos=[6, 5], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:26:15] [Server thread/INFO]: trdung2007 issued server command: /shop
+[01:26:30] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:26:38] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:26:46] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:26:51] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/92664, uuid='8d5914ae-7438-45d8-8ba6-6e6be0757cf5', l='ServerLevel[world]', x=3740.50, y=36.00, z=-1029.50, cpos=[233, -65], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:26:51] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/92666, uuid='4a5ed8f7-82e2-492f-84e5-03852aab5cbc', l='ServerLevel[world]', x=3740.50, y=36.00, z=-1029.50, cpos=[233, -65], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:28:10] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 3 Boss
+[01:28:10] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 0/200 ❤ ]'/91011, uuid='ccaf983a-93af-4e42-b9fb-6189f722d79e', l='ServerLevel[world]', x=3811.43, y=62.00, z=-1029.34, cpos=[238, -65], tl=4066, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 0/200 ❤ ] was blown up by VUADITVIETNAM using [Cung Hủy Diệt]
+[01:28:12] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/93322, uuid='2d230694-9372-4955-8473-dd6a82365d66', l='ServerLevel[world]', x=3741.50, y=13.00, z=-1102.60, cpos=[233, -69], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:28:23] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/93427, uuid='107e9cac-8df4-46f3-992a-e704d8c76558', l='ServerLevel[world]', x=3803.60, y=-2.00, z=-980.40, cpos=[237, -62], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:29:02] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 2 Boss
+[01:29:02] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 2/200 ❤ ]'/91010, uuid='f5cba2eb-9611-4b20-af61-4158f976a334', l='ServerLevel[world]', x=3810.84, y=72.31, z=-998.17, cpos=[238, -63], tl=5117, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 2/200 ❤ ] was blown up by VUADITVIETNAM using [Chùy Quỷ Dữ]
+[01:29:20] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop]
+[01:29:22] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[01:30:18] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:30:18] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/94924, uuid='359fdb8d-68e7-471a-8aee-8e8efeb0f74b', l='ServerLevel[world]', x=3675.60, y=71.00, z=-1084.40, cpos=[229, -68], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:30:18] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/94925, uuid='43df6843-4af3-4606-ba57-c9c9d7ec3faf', l='ServerLevel[world]', x=3675.60, y=71.00, z=-1084.40, cpos=[229, -68], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:30:33] [Server thread/INFO]: Vandz2404 issued server command: /sethome stronghold
+[01:30:40] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 1 Boss
+[01:30:40] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 6/100 ❤ ]'/91009, uuid='d77636a4-b87a-40ba-937d-03404f5095d7', l='ServerLevel[world]', x=3768.82, y=114.00, z=-1059.88, cpos=[235, -67], tl=7073, v=true] died: ☠ Quỷ Vương Xương ☠ [ 6/100 ❤ ] was smashed by trdung2007 with [Chùy Quỷ Dữ]
+[01:30:40] [Server thread/INFO]: Vandz2404 issued server command: /delhome van1
+[01:30:49] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:30:56] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/95149, uuid='0a377da9-203f-4b85-bf91-37380a829f91', l='ServerLevel[world]', x=3693.60, y=83.00, z=-1150.60, cpos=[230, -72], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:31:06] [Server thread/INFO]: Vandz2404 issued server command: /sethome base
+[01:31:28] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 0 Boss
+[01:31:28] [Server thread/INFO]: =================================
+[01:31:28] [Server thread/INFO]: 🎉 CUỘC ĐỘT KÍCH ĐÃ BỊ ĐẨY LÙI 🎉
+[01:31:28] [Server thread/INFO]: Cả 5 Quỷ Vương đã bị tiêu diệt!
+[01:31:28] [Server thread/INFO]: =================================
+[01:31:28] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 4/100 ❤ ]'/91007, uuid='7848ede7-2ddc-4b54-aeb7-697265dd9cf1', l='ServerLevel[world]', x=3807.04, y=60.42, z=-1077.37, cpos=[237, -68], tl=8025, v=true] died: ☠ Quỷ Vương Xương ☠ [ 4/100 ❤ ] was blown up by trdung2007 using [Chùy Quỷ Dữ]
+[01:31:59] [Server thread/INFO]: Vandz2404 issued server command: /home van
+[01:32:04] [Server thread/INFO]: Vandz2404 issued server command: /home van1
+[01:32:07] [Server thread/INFO]: Vandz2404 issued server command: /home van2
+[01:32:07] [Server thread/INFO]: VUADITVIETNAM issued server command: /rtp
+[01:32:18] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:32:24] [Server thread/INFO]: trdung2007 issued server command: /rtp
+[01:32:26] [Server thread/INFO]: VUADITVIETNAM issued server command: /rtp
+[01:32:36] [Server thread/INFO]: Vandz2404 issued server command: /home base
+[01:32:52] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[01:32:56] [Server thread/INFO]: Set the time to 1000
+[01:33:07] [Server thread/INFO]: VUADITVIETNAM issued server command: /rtp
+[01:33:31] [Server thread/INFO]: VUADITVIETNAM has made the advancement [Cover Me with Diamonds]
+[01:33:34] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:33:48] [Server thread/INFO]: trdung2007 has made the advancement [Cover Me with Diamonds]
+[01:34:09] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:34:19] [Server thread/INFO]: trdung2007 issued server command: /sell
+[01:34:26] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:34:50] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/98916, uuid='c65926f8-5f9f-4ad3-9f0c-90d94c87bd79', l='ServerLevel[world]', x=-802.60, y=-8.00, z=762.40, cpos=[-51, 47], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:34:50] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/98917, uuid='cf9a4e55-1c81-4420-a7ad-528aa08c6afb', l='ServerLevel[world]', x=-802.60, y=-8.00, z=762.40, cpos=[-51, 47], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:36:57] [Server thread/INFO]: Vandz2404 has made the advancement [Isn't It Iron Pick]
+[01:37:06] [Server thread/INFO]: trdung2007 issued server command: /home lang
+[01:37:29] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/100531, uuid='e684d10a-a56c-43f2-921b-f268b0e4423a', l='ServerLevel[world]', x=-670.40, y=45.00, z=709.40, cpos=[-42, 44], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:37:33] [Server thread/INFO]: trdung2007 issued server command: /shop
+[01:37:48] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/101721, uuid='04305369-8380-43e5-8ce1-c7de82d36a19', l='ServerLevel[world]', x=-465.40, y=4.00, z=-2026.50, cpos=[-30, -127], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:37:48] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/101722, uuid='c97dab58-7555-4403-8693-fc227a3bd301', l='ServerLevel[world]', x=-465.40, y=4.00, z=-2026.50, cpos=[-30, -127], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:37:50] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:37:57] [Server thread/INFO]: Vandz2404 issued server command: /delhome van
+[01:38:05] [Server thread/INFO]: Vandz2404 issued server command: /sethome stronghold
+[01:38:08] [Server thread/INFO]: Vandz2404 issued server command: /home van2
+[01:38:44] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/102318, uuid='693e6c87-5930-4a18-ba12-b28fa80d0cfc', l='ServerLevel[world]', x=-378.40, y=39.00, z=708.40, cpos=[-24, 44], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:02] [Server thread/INFO]: Vandz2404 issued server command: /home stronghold
+[01:39:08] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/102890, uuid='ccc5f864-f8a1-4281-8d99-08369cd3e93d', l='ServerLevel[world]', x=-345.50, y=71.00, z=554.40, cpos=[-22, 34], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:09] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/102914, uuid='15e9341a-4d4e-4bf6-b325-7ad6a20865ac', l='ServerLevel[world]', x=-401.60, y=74.00, z=675.60, cpos=[-26, 42], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:10] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/102992, uuid='205b97d7-1ee7-4319-b20e-53a60da95146', l='ServerLevel[world]', x=-516.50, y=7.00, z=759.40, cpos=[-33, 47], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:10] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/102994, uuid='0c4e5ab6-a0b6-4e64-992b-fad7d2ce21bc', l='ServerLevel[world]', x=-516.50, y=7.00, z=759.40, cpos=[-33, 47], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:10] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/103010, uuid='98900b7d-4ddd-4a5f-b42d-5a83bad90241', l='ServerLevel[world]', x=-499.50, y=27.00, z=757.50, cpos=[-32, 47], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:10] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/103012, uuid='5cbbd786-b344-43ad-85fa-56e4521b6196', l='ServerLevel[world]', x=-309.60, y=-3.00, z=441.40, cpos=[-20, 27], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:10] [Server thread/INFO]: trdung2007 issued server command: /shop
+[01:39:16] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/103532, uuid='16e174bb-2f42-4dcd-8c97-c0be30b13600', l='ServerLevel[world]', x=-285.40, y=8.00, z=351.50, cpos=[-18, 21], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:17] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/103571, uuid='8b2f4ae0-0b83-41a8-8673-5940a18ebb41', l='ServerLevel[world]', x=-292.50, y=21.00, z=341.50, cpos=[-19, 21], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:17] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/103575, uuid='5e41119b-917d-4709-b04e-f1fade19b051', l='ServerLevel[world]', x=-751.60, y=23.00, z=562.40, cpos=[-47, 35], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:18] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/103699, uuid='bdd2dc77-ce53-4a34-bb8f-0ba65a1e0154', l='ServerLevel[world]', x=-803.40, y=40.00, z=679.50, cpos=[-51, 42], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:19] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/103709, uuid='9c719c76-2b67-4e7c-a71f-701574ff4d07', l='ServerLevel[world]', x=-730.60, y=-13.00, z=618.50, cpos=[-46, 38], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ]'/97419, uuid='b1cd8583-72d3-4ae7-b4ae-d00129f6e76f', l='ServerLevel[world]', x=-776.33, y=65.00, z=517.06, cpos=[-49, 32], tl=423, v=true] died: ☠ Quỷ Vương Xương ☠ [ 1/100 ❤ ] was blown up by ☠ Quỷ Vương Zombie ☠ [ 153/200 ❤ ] using [Chùy Quỷ Dữ]
+[01:39:30] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/104948, uuid='43003992-4de9-482e-ba90-76d669287d57', l='ServerLevel[world]', x=26.50, y=-36.00, z=13.50, cpos=[1, 0], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:30] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/104953, uuid='f329ee8f-bd5d-4517-b549-0b0184cca326', l='ServerLevel[world]', x=26.50, y=-36.00, z=13.50, cpos=[1, 0], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:31] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/105041, uuid='c4ab26f1-de5f-4c76-b5c8-16d691596b0e', l='ServerLevel[world]', x=-1015.50, y=67.00, z=679.60, cpos=[-64, 42], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:32] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/105094, uuid='3a23484a-ef3c-4942-8b17-bfec5e38926d', l='ServerLevel[world]', x=-1039.40, y=70.00, z=605.40, cpos=[-65, 37], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:32] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/105096, uuid='2844420b-41eb-454b-9075-3808371a330c', l='ServerLevel[world]', x=-1039.40, y=70.00, z=605.40, cpos=[-65, 37], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:39:38] [Server thread/INFO]: trdung2007 issued server command: /rtp
+[01:39:52] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/106614, uuid='a69ed89f-4483-4a20-9495-b4c3a498677f', l='ServerLevel[world]', x=-1347.60, y=42.00, z=953.50, cpos=[-85, 59], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:52] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/106616, uuid='ac36c787-6022-4ed8-9f32-c9c8ecad6b83', l='ServerLevel[world]', x=-1347.60, y=42.00, z=953.50, cpos=[-85, 59], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:39:54] [Server thread/INFO]: Vandz2404 issued server command: /home base
+[01:40:12] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/107770, uuid='de972fd7-48c2-40ed-a309-e0496632d5e8', l='ServerLevel[world]', x=1284.50, y=39.00, z=-3442.60, cpos=[80, -216], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:40:23] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/108232, uuid='ebd36abe-e230-4308-aa29-2e82485a35f9', l='ServerLevel[world]', x=1033.50, y=-5.00, z=-3442.40, cpos=[64, -216], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:40:31] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/108643, uuid='1b961833-dadd-4626-b64e-2c2a73570bff', l='ServerLevel[world]', x=-4169.60, y=5.00, z=1890.40, cpos=[-261, 118], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:40:32] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/108700, uuid='3810004b-9607-4ce4-a881-53da41e47248', l='ServerLevel[world]', x=-1020.60, y=27.00, z=1411.40, cpos=[-64, 88], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:40:32] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/108702, uuid='858c3d72-0a66-48fa-b941-041afa638332', l='ServerLevel[world]', x=-1020.60, y=27.00, z=1411.40, cpos=[-64, 88], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:40:32] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/108750, uuid='9e242daa-9eb8-4c0c-9233-276154aaeaa1', l='ServerLevel[world]', x=956.50, y=42.00, z=-3301.60, cpos=[59, -207], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:40:34] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/108901, uuid='f9eb942f-3c51-4391-9359-d01a035255a6', l='ServerLevel[world]', x=-975.40, y=19.00, z=1395.50, cpos=[-61, 87], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:40:35] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/108958, uuid='fead93dc-b8d8-4026-874e-ebd50435188e', l='ServerLevel[world]', x=915.60, y=52.00, z=-3248.60, cpos=[57, -204], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:40:38] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/109213, uuid='91dcad8e-9f99-4172-af90-ae69f75a9c4f', l='ServerLevel[world]', x=975.60, y=3.00, z=-3202.50, cpos=[60, -201], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:40:39] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:41:58] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/109845, uuid='1cf0b21f-4c1e-4e80-883e-7f63380df30f', l='ServerLevel[world]', x=-1016.60, y=18.00, z=1559.50, cpos=[-64, 97], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:44:00] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/110656, uuid='12e6130b-92c5-437c-9559-245a99d9a9a1', l='ServerLevel[world]', x=-4223.50, y=23.00, z=1875.50, cpos=[-264, 117], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:44:02] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/110668, uuid='259b0ca9-b347-413c-8157-6711695dd718', l='ServerLevel[world]', x=-926.40, y=18.00, z=1464.40, cpos=[-58, 91], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:45:37] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/111070, uuid='11d91591-a698-4a65-ae43-c393498a5315', l='ServerLevel[world]', x=-1023.40, y=7.00, z=1462.50, cpos=[-64, 91], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:45:45] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/111085, uuid='39fbaf03-343f-4306-a46c-2527ad932e09', l='ServerLevel[world]', x=-4238.50, y=-29.00, z=1910.60, cpos=[-265, 119], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:46:00] [Server thread/INFO]: Villager Villager['Farmer'/108575, uuid='126074a3-225a-4ee6-8515-4b9a5d8684d5', l='ServerLevel[world]', x=-906.38, y=63.00, z=1546.30, cpos=[-57, 96], tl=6547, v=true] died, message: 'Farmer was slain by Drowned'
+[01:46:11] [Server thread/INFO]: Villager Villager['Villager'/108604, uuid='5a27fa1d-199d-4f30-a010-f93a60f83d7e', l='ServerLevel[world]', x=-906.98, y=63.56, z=1548.52, cpos=[-57, 96], tl=6764, v=true] died, message: 'Villager was slain by Drowned'
+[01:46:52] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:47:05] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/111626, uuid='a1959fcc-e4cf-46cf-a817-d6a016797f21', l='ServerLevel[world]', x=-4163.40, y=-12.00, z=1912.60, cpos=[-261, 119], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:47:10] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/111693, uuid='57323d82-7e3d-446e-a6f6-e2c5795a48e9', l='ServerLevel[world]', x=-1018.60, y=29.00, z=1528.50, cpos=[-64, 95], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:47:26] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/111998, uuid='d0ff3c25-fb39-4ec3-afd7-49078897f3d8', l='ServerLevel[world]', x=-4233.50, y=-29.00, z=1922.60, cpos=[-265, 120], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:47:40] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/112062, uuid='998ae846-483d-4c9b-86ba-8032c5547c7f', l='ServerLevel[world]', x=-4129.60, y=-6.00, z=1993.40, cpos=[-259, 124], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:47:40] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/112066, uuid='8ae7df14-31e2-442e-8fbd-ef9ae19a46f4', l='ServerLevel[world]', x=-827.50, y=15.00, z=1488.50, cpos=[-52, 93], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:47:40] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:47:47] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:47:57] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:48:02] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:48:16] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/112189, uuid='d9e9f6d1-e454-4d7e-a752-1a0542e9ae84', l='ServerLevel[world]', x=-4088.60, y=-19.00, z=1874.50, cpos=[-256, 117], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:48:50] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/112776, uuid='c07ccadc-23a9-4d19-911e-9c759ab2bff2', l='ServerLevel[world]', x=-928.40, y=-22.00, z=1515.60, cpos=[-59, 94], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:49:05] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[01:49:12] [Server thread/INFO]: Vandz2404 issued server command: /home base
+[01:49:12] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/113049, uuid='906a4ad9-3e0a-471d-a5d5-fff6ebf6560b', l='ServerLevel[world]', x=-4144.60, y=-38.00, z=1938.60, cpos=[-260, 121], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:49:57] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[01:50:40] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/113412, uuid='bda46ead-d4a2-4bee-b2d1-a56e318abdb0', l='ServerLevel[world]', x=-872.40, y=7.00, z=1431.40, cpos=[-55, 89], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:50:59] [Server thread/INFO]: Vandz2404 has made the advancement [Enchanter]
+[01:51:11] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/113533, uuid='f2eab336-aba1-4e7b-bbd6-ae43293e7ff4', l='ServerLevel[world]', x=-4116.60, y=-11.00, z=1939.60, cpos=[-258, 121], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:51:11] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/113535, uuid='333c4488-06f7-4a6f-8f8d-ccf109ffd3f7', l='ServerLevel[world]', x=-4116.60, y=-11.00, z=1939.60, cpos=[-258, 121], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:51:37] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/113888, uuid='2220336c-f197-4352-961c-c7892bff497b', l='ServerLevel[world]', x=-709.60, y=9.00, z=1538.60, cpos=[-45, 96], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:51:37] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/113889, uuid='86f27192-a72a-48d0-8006-3b97eccecf36', l='ServerLevel[world]', x=-709.60, y=9.00, z=1538.60, cpos=[-45, 96], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:52:39] [Server thread/INFO]: Villager Villager['Cartographer'/108506, uuid='c9bbb1fb-5e83-45b6-9a24-94214c7823b3', l='ServerLevel[world]', x=-921.51, y=72.94, z=1483.40, cpos=[-58, 92], tl=14555, v=true] died, message: 'Cartographer was blown up by trdung2007 using [Chùy Quỷ Dữ]'
+[01:52:39] [Server thread/INFO]: Villager Villager['Cartographer'/108506, uuid='c9bbb1fb-5e83-45b6-9a24-94214c7823b3', l='ServerLevel[world]', x=-921.51, y=72.94, z=1483.40, cpos=[-58, 92], tl=14555, v=true] died, message: 'Cartographer was slain by trdung2007 using [Chùy Quỷ Dữ]'
+[01:52:59] [Server thread/INFO]: trdung2007 issued server command: /tpa VUADITVIETNAM
+[01:53:19] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/116124, uuid='ef21448b-9720-4039-b899-14e0f6cd0f54', l='ServerLevel[world]', x=-222.40, y=16.00, z=1127.60, cpos=[-14, 70], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:53:51] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/116265, uuid='c359dc9f-4992-444e-9ec1-217ae38273c2', l='ServerLevel[world]', x=-249.60, y=18.00, z=1287.40, cpos=[-16, 80], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[01:54:30] [Server thread/INFO]: Villager Villager['Villager'/115142, uuid='115575a7-67ef-4d48-b834-02546dbe47ec', l='ServerLevel[world]', x=-137.61, y=65.00, z=1258.55, cpos=[-9, 78], tl=2482, v=true] died, message: 'Villager was blown up by trdung2007 using [Chùy Quỷ Dữ]'
+[01:54:30] [Server thread/INFO]: Villager Villager['Villager'/115142, uuid='115575a7-67ef-4d48-b834-02546dbe47ec', l='ServerLevel[world]', x=-137.61, y=65.00, z=1258.55, cpos=[-9, 78], tl=2482, v=true] died, message: 'Villager was slain by trdung2007 using [Chùy Quỷ Dữ]'
+[01:54:30] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa vandz2404
+[01:54:38] [Server thread/INFO]: Villager Villager['Cartographer'/115147, uuid='8864df8b-8038-4416-bf81-0a83e2b5abad', l='ServerLevel[world]', x=-138.48, y=66.00, z=1256.50, cpos=[-9, 78], tl=2644, v=true] died, message: 'Cartographer was blown up by trdung2007 using [Chùy Quỷ Dữ]'
+[01:54:38] [Server thread/INFO]: Villager Villager['Cartographer'/115147, uuid='8864df8b-8038-4416-bf81-0a83e2b5abad', l='ServerLevel[world]', x=-138.48, y=66.00, z=1256.50, cpos=[-9, 78], tl=2644, v=true] died, message: 'Cartographer was slain by trdung2007 using [Chùy Quỷ Dữ]'
+[01:54:52] [Server thread/INFO]: Villager Villager['Mason'/115085, uuid='88f2468e-3a53-481b-9a0d-0420ab917fe7', l='ServerLevel[world]', x=-157.08, y=67.56, z=1281.48, cpos=[-10, 80], tl=2955, v=true] died, message: 'Mason was blown up by trdung2007 using [Chùy Quỷ Dữ]'
+[01:54:52] [Server thread/INFO]: Villager Villager['Mason'/115085, uuid='88f2468e-3a53-481b-9a0d-0420ab917fe7', l='ServerLevel[world]', x=-157.08, y=67.56, z=1281.48, cpos=[-10, 80], tl=2955, v=true] died, message: 'Mason was slain by trdung2007 using [Chùy Quỷ Dữ]'
+[01:55:10] [Server thread/INFO]: Villager Villager['Villager'/115146, uuid='ce27d397-e9b6-425c-bba1-9dcaa7095ba4', l='ServerLevel[world]', x=-188.70, y=68.00, z=1254.94, cpos=[-12, 78], tl=3284, v=true] died, message: 'Villager was blown up by trdung2007 using [Chùy Quỷ Dữ]'
+[01:55:10] [Server thread/INFO]: Villager Villager['Villager'/115146, uuid='ce27d397-e9b6-425c-bba1-9dcaa7095ba4', l='ServerLevel[world]', x=-188.70, y=68.00, z=1254.94, cpos=[-12, 78], tl=3284, v=true] died, message: 'Villager was slain by trdung2007 using [Chùy Quỷ Dữ]'
+[01:55:25] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/116769, uuid='138f1145-385e-478b-9aa2-3fca72d39d54', l='ServerLevel[world]', x=-77.60, y=-4.00, z=1162.40, cpos=[-5, 72], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:55:32] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[01:55:34] [Server thread/INFO]: trdung2007 issued server command: /tpa Vandz2404
+[01:57:27] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/117243, uuid='5bb47019-c252-4f91-9835-911a7431e42c', l='ServerLevel[world]', x=-4060.60, y=-9.00, z=1905.40, cpos=[-254, 119], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[01:59:27] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/117876, uuid='5cfe5760-e181-47ef-87ae-b318eadceda0', l='ServerLevel[world]', x=-4126.40, y=-3.00, z=1877.60, cpos=[-258, 117], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[02:00:06] [Server thread/INFO]: trdung2007 has made the advancement [Enchanter]
+[02:02:28] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[02:03:35] [Server thread/INFO]: VUADITVIETNAM fell from a high place
+[02:03:43] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[02:05:21] [Server thread/INFO]: VUADITVIETNAM was slain by trdung2007 using [Chùy Quỷ Dữ]
+[02:05:35] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa trdung2007
+[02:06:06] [Server thread/INFO]: Vandz2404 issued server command: /home base
+[02:06:21] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[02:06:42] [Server thread/INFO]: VUADITVIETNAM issued server command: /rtp
+[02:07:03] [Server thread/INFO]: VUADITVIETNAM issued server command: /tpa van
+[02:07:29] [Server thread/INFO]: trdung2007 issued server command: /raid
+[02:07:29] [Server thread/INFO]: =================================
+[02:07:29] [Server thread/INFO]: ⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠
+[02:07:29] [Server thread/INFO]: Một nhóm 5 Quỷ Vương đã xuất hiện tại:
+[02:07:29] [Server thread/INFO]: X: -4123, Y: 57, Z: 1909
+[02:07:29] [Server thread/INFO]: Tham gia tiêu diệt để nhận phần thưởng khổng lồ!
+[02:07:29] [Server thread/INFO]: =================================
+[02:07:43] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/122021, uuid='052107a8-5dbf-445a-9dfe-4cef28d427a1', l='ServerLevel[world]', x=-4103.60, y=-16.00, z=1962.50, cpos=[-257, 122], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[02:08:18] [Server thread/INFO]: ⚔ Một Boss Raid đã bị tiêu diệt! Còn lại: 4 Boss
+[02:08:18] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 5/100 ❤ ]'/121991, uuid='1ac5e676-a4ec-45cf-bfc7-f7e1ad72a8c6', l='ServerLevel[world]', x=-4128.14, y=60.45, z=1937.24, cpos=[-259, 121], tl=985, v=true] died: ☠ Quỷ Vương Xương ☠ [ 5/100 ❤ ] was slain by trdung2007 using [Chùy Quỷ Dữ]
+[02:08:47] [Server thread/INFO]: Named entity Drowned['☠ Quỷ Vương Zombie ☠ [ 199/200 ❤ ]'/122691, uuid='afc5f619-abe0-425b-aaaa-4770500c8611', l='ServerLevel[world]', x=-4122.50, y=37.25, z=1925.05, cpos=[-258, 120], tl=649, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 199/200 ❤ ] was blown up by ☠ Quỷ Vương Xương ☠ [ 92/100 ❤ ] using [Cung Hủy Diệt]
+[02:08:55] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/124069, uuid='adcc70e0-4516-48dd-8936-9820aebc5781', l='ServerLevel[world]', x=-4193.50, y=19.00, z=1834.60, cpos=[-263, 114], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[02:08:55] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/124070, uuid='d4e52b1b-3998-4d00-8e1f-e77df0fd49b6', l='ServerLevel[world]', x=-4193.50, y=19.00, z=1834.60, cpos=[-263, 114], tl=2, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[02:08:55] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/124071, uuid='e2ad0fed-54b2-40a4-879e-b112b2aaa136', l='ServerLevel[world]', x=-4193.50, y=19.00, z=1834.60, cpos=[-263, 114], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[02:09:12] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[02:09:24] [Server thread/INFO]: Vandz2404 issued server command: /home base
+[02:09:41] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[02:09:48] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[02:10:26] [Server thread/INFO]: trdung2007 issued server command: /shop
+[02:10:29] [Server thread/INFO]: trdung2007 has made the advancement [Ice Bucket Challenge]
+[02:10:34] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[02:11:47] [Server thread/INFO]: trdung2007 issued server command: /
+[02:13:07] [Server thread/INFO]: VUADITVIETNAM issued server command: /shop
+[02:14:31] [Server thread/INFO]: Vandz2404 issued server command: /sell
+[02:14:44] [Server thread/INFO]: Vandz2404 issued server command: /rtp
+[02:15:18] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/135950, uuid='05112ab4-394d-4ee0-9eaa-03b9828013c6', l='ServerLevel[world]', x=902.50, y=-3.00, z=1746.50, cpos=[56, 109], tl=3, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[02:15:18] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/135961, uuid='7aad4398-60dd-43b1-970f-2d5ca3885989', l='ServerLevel[world]', x=902.50, y=-3.00, z=1746.50, cpos=[56, 109], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[02:15:19] [Server thread/INFO]: Named entity Skeleton['☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ]'/136103, uuid='46941e01-4073-438d-b61e-d37dd43088d4', l='ServerLevel[world]', x=895.40, y=2.00, z=1790.50, cpos=[55, 111], tl=3, v=true] died: ☠ Quỷ Vương Xương ☠ [ 100/100 ❤ ] died
+[02:15:19] [Server thread/INFO]: Named entity Zombie['☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ]'/136106, uuid='7cf2e0ff-6201-4bac-adb7-bef4b5bdd939', l='ServerLevel[world]', x=895.40, y=2.00, z=1790.50, cpos=[55, 111], tl=2, v=true] died: ☠ Quỷ Vương Zombie ☠ [ 200/200 ❤ ] died
+[02:15:24] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[02:15:41] [Server thread/INFO]: Vandz2404 issued server command: /shop
+[02:15:56] [Server thread/INFO]: VUADITVIETNAM lost connection: Disconnected
+[02:15:56] [Server thread/INFO]: VUADITVIETNAM left the game
+[02:16:04] [Server thread/INFO]: Vandz2404 lost connection: Disconnected
+[02:16:04] [Server thread/INFO]: Vandz2404 left the game
+[02:16:10] [Server thread/INFO]: trdung2007 lost connection: Disconnected
+[02:16:10] [Server thread/INFO]: trdung2007 left the game

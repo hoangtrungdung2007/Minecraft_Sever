@@ -18,6 +18,7 @@ com\utilitytoolsplugin\RTPManager$2.class
 com\utilitytoolsplugin\SellManager.class
 com\utilitytoolsplugin\BossSkeletonManager.class
 com\utilitytoolsplugin\ItemSpawnerManager.class
+com\utilitytoolsplugin\GiveWeaponCommand.class
 com\utilitytoolsplugin\TorchLightListener$1.class
 com\utilitytoolsplugin\TreeCapitatorListener.class
 com\utilitytoolsplugin\HammerListener$1.class

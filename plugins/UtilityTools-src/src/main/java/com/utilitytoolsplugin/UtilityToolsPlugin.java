@@ -33,6 +33,7 @@ public class UtilityToolsPlugin extends JavaPlugin {
     private StatsManager statsManager;
     private BossZombieManager bossZombieManager;
     private BossSkeletonManager bossSkeletonManager;
+    private BossSpiderManager bossSpiderManager;
     private RaidManager raidManager;
 
     @Override
@@ -65,6 +66,7 @@ public class UtilityToolsPlugin extends JavaPlugin {
         statsManager = new StatsManager(this, economyManager);
         bossZombieManager = new BossZombieManager(this, economyManager);
         bossSkeletonManager = new BossSkeletonManager(this, economyManager);
+        bossSpiderManager = new BossSpiderManager(this, economyManager);
         raidManager = new RaidManager(this, economyManager);
         
         // Register events for KingMC Features
@@ -76,6 +78,7 @@ public class UtilityToolsPlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(statsManager, this);
         getServer().getPluginManager().registerEvents(bossZombieManager, this);
         getServer().getPluginManager().registerEvents(bossSkeletonManager, this);
+        getServer().getPluginManager().registerEvents(bossSpiderManager, this);
         getServer().getPluginManager().registerEvents(raidManager, this);
         
         // Register commands
@@ -140,5 +143,9 @@ public class UtilityToolsPlugin extends JavaPlugin {
 
     public BossSkeletonManager getBossSkeletonManager() {
         return bossSkeletonManager;
+    }
+
+    public BossSpiderManager getBossSpiderManager() {
+        return bossSpiderManager;
     }
 }

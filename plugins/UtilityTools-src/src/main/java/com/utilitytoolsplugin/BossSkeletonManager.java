@@ -174,7 +174,7 @@ public class BossSkeletonManager implements Listener {
 
                 if (shots % 3 == 0) {
                     event.getProjectile().getPersistentDataContainer().set(ANCHOR_ARROW_KEY, PersistentDataType.BYTE, (byte) 1);
-                    player.sendMessage("§c§l💥 Mũi tên thứ 3: §4§lSỨC MẠNH NEO HỒI SINH ĐÃ ĐƯỢC KÍCH HOẠT!");
+                    // Đã tắt thông báo kích hoạt neo hồi sinh theo yêu cầu
                 }
             }
         }
@@ -218,10 +218,7 @@ public class BossSkeletonManager implements Listener {
             arrow.getWorld().spawnParticle(Particle.EXPLOSION_EMITTER, arrow.getLocation(), 3);
             arrow.getWorld().spawnParticle(Particle.FLAME, arrow.getLocation(), 50, 1.0, 1.0, 1.0, 0.2);
 
-            // Gửi thông báo cho người chơi nếu bắn trúng người chơi
-            if (event.getHitEntity() instanceof Player p) {
-                p.sendTitle("", "§4§l💥 Vụ nổ Neo Hồi Sinh!", 4, 20, 8);
-            }
+            // Đã tắt thông báo cho người chơi khi trúng Neo Hồi Sinh
             arrow.remove();
         } else if (isExplosive) {
             Entity shooter = arrow.getShooter() instanceof Entity ? (Entity) arrow.getShooter() : null;

@@ -55,8 +55,8 @@ commands:
     permission: utilitytoolsplugin.giveweapon
     permission-message: "§cBạn không có quyền dùng lệnh này!"
   spawn:
-    description: "Triệu hồi boss (ske hoặc zombie)"
-    usage: "/spawn <ske|zombie>"
+    description: "Triệu hồi boss (ske, zombie hoặc spider)"
+    usage: "/spawn <ske|zombie|spider>"
     permission: utilitytoolsplugin.spawnboss
     permission-message: "§cBạn không có quyền dùng lệnh này!"
 

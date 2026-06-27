@@ -10,6 +10,7 @@ com\utilitytoolsplugin\OreVeinMinerListener$1.class
 com\utilitytoolsplugin\OreVeinMinerListener.class
 com\utilitytoolsplugin\BossSpiderManager.class
 com\utilitytoolsplugin\EconomyManager.class
+com\utilitytoolsplugin\PayCommand.class
 com\utilitytoolsplugin\StatsManager$StatsData.class
 com\utilitytoolsplugin\ItemSpawnerManager$2.class
 com\utilitytoolsplugin\BossSpiderManager$1.class

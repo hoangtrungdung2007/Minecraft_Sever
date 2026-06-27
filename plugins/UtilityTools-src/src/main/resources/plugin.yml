@@ -39,6 +39,9 @@ commands:
   tpa:
     description: "Dịch chuyển đến người chơi khác"
     usage: "/tpa <tên>"
+  pay:
+    description: "Chuyển tiền cho người chơi khác"
+    usage: "/pay <tên> <số_tiền>"
   raid:
     description: "Khởi động cuộc đột kích Boss"
     usage: "/raid [stop]"

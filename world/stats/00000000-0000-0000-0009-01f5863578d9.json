@@ -1,16 +1,40 @@
 {
   "stats": {
-    "minecraft:killed": {
-      "minecraft:zombie": 1,
-      "minecraft:donkey": 2,
-      "minecraft:horse": 17,
-      "minecraft:creeper": 1,
-      "minecraft:cow": 15,
-      "minecraft:spider": 1
+    "minecraft:used": {
+      "minecraft:golden_apple": 20,
+      "minecraft:cobbled_deepslate": 49,
+      "minecraft:diamond_pickaxe": 34,
+      "minecraft:totem_of_undying": 5,
+      "minecraft:dirt": 5,
+      "minecraft:bow": 27,
+      "minecraft:mace": 45,
+      "minecraft:firework_rocket": 20
     },
-    "minecraft:killed_by": {
-      "minecraft:player": 2,
-      "minecraft:zombie": 2
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 4440,
+      "minecraft:walk_one_cm": 132414,
+      "minecraft:leave_game": 7,
+      "minecraft:walk_under_water_one_cm": 6928,
+      "minecraft:mob_kills": 37,
+      "minecraft:damage_taken": 3629,
+      "minecraft:play_time": 39948,
+      "minecraft:damage_dealt": 6059,
+      "minecraft:open_shulker_box": 2,
+      "minecraft:damage_absorbed": 730,
+      "minecraft:jump": 564,
+      "minecraft:time_since_death": 3579,
+      "minecraft:aviate_one_cm": 115610,
+      "minecraft:damage_dealt_absorbed": 23,
+      "minecraft:drop": 8,
+      "minecraft:open_enderchest": 1,
+      "minecraft:sprint_one_cm": 67631,
+      "minecraft:fall_one_cm": 39369,
+      "minecraft:total_world_time": 39948,
+      "minecraft:swim_one_cm": 2760,
+      "minecraft:fly_one_cm": 76857,
+      "minecraft:walk_on_water_one_cm": 4365,
+      "minecraft:sneak_time": 130,
+      "minecraft:deaths": 4
     },
     "minecraft:mined": {
       "minecraft:gravel": 1,
@@ -22,15 +46,14 @@
       "minecraft:coal_ore": 3,
       "minecraft:iron_ore": 1
     },
-    "minecraft:used": {
-      "minecraft:golden_apple": 18,
-      "minecraft:cobbled_deepslate": 49,
-      "minecraft:diamond_pickaxe": 34,
-      "minecraft:totem_of_undying": 5,
-      "minecraft:dirt": 1,
-      "minecraft:bow": 27,
-      "minecraft:mace": 45,
-      "minecraft:firework_rocket": 20
+    "minecraft:crafted": {
+      "minecraft:torch": 40,
+      "minecraft:stick": 8,
+      "minecraft:birch_planks": 4
+    },
+    "minecraft:killed_by": {
+      "minecraft:player": 2,
+      "minecraft:zombie": 2
     },
     "minecraft:picked_up": {
       "minecraft:dirt": 139,
@@ -51,12 +74,20 @@
       "minecraft:mace": 3,
       "minecraft:firework_rocket": 71,
       "minecraft:birch_log": 1,
-      "minecraft:wheat_seeds": 1,
+      "minecraft:wheat_seeds": 4,
       "minecraft:diamond": 70,
       "minecraft:filled_map": 1,
       "minecraft:elytra": 1,
       "minecraft:spider_eye": 2,
       "minecraft:golden_apple": 63
+    },
+    "minecraft:killed": {
+      "minecraft:zombie": 1,
+      "minecraft:donkey": 2,
+      "minecraft:horse": 17,
+      "minecraft:creeper": 1,
+      "minecraft:cow": 15,
+      "minecraft:spider": 1
     },
     "minecraft:dropped": {
       "minecraft:cobblestone": 25,
@@ -64,37 +95,6 @@
       "minecraft:string": 2,
       "minecraft:cobbled_deepslate": 192,
       "minecraft:dirt": 68
-    },
-    "minecraft:custom": {
-      "minecraft:time_since_rest": 2413,
-      "minecraft:walk_one_cm": 128205,
-      "minecraft:leave_game": 4,
-      "minecraft:walk_under_water_one_cm": 6928,
-      "minecraft:mob_kills": 37,
-      "minecraft:damage_taken": 3624,
-      "minecraft:play_time": 37921,
-      "minecraft:damage_dealt": 6059,
-      "minecraft:open_shulker_box": 2,
-      "minecraft:damage_absorbed": 690,
-      "minecraft:jump": 544,
-      "minecraft:time_since_death": 1552,
-      "minecraft:aviate_one_cm": 115336,
-      "minecraft:damage_dealt_absorbed": 23,
-      "minecraft:drop": 8,
-      "minecraft:open_enderchest": 1,
-      "minecraft:sprint_one_cm": 64919,
-      "minecraft:fall_one_cm": 38271,
-      "minecraft:total_world_time": 37921,
-      "minecraft:swim_one_cm": 2760,
-      "minecraft:fly_one_cm": 74797,
-      "minecraft:walk_on_water_one_cm": 4365,
-      "minecraft:sneak_time": 130,
-      "minecraft:deaths": 4
-    },
-    "minecraft:crafted": {
-      "minecraft:torch": 40,
-      "minecraft:stick": 8,
-      "minecraft:birch_planks": 4
     }
   },
   "DataVersion": 4671

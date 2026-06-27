@@ -100,6 +100,10 @@ public class UtilityToolsPlugin extends JavaPlugin {
         getCommand("tpa").setExecutor(tpaManager);
         getCommand("tpa").setTabCompleter(tpaManager);
         
+        PayCommand payCommand = new PayCommand(economyManager);
+        getCommand("pay").setExecutor(payCommand);
+        getCommand("pay").setTabCompleter(payCommand);
+        
         getCommand("raid").setExecutor(raidManager);
         
         GiveWeaponCommand giveWeaponCmd = new GiveWeaponCommand(this);

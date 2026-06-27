@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.NamespacedKey;
 import org.bukkit.block.Block;
 import org.bukkit.block.CreatureSpawner;
 import org.bukkit.configuration.file.FileConfiguration;
@@ -75,8 +76,11 @@ public class ItemSpawnerManager implements Listener {
 
     // ===================== CONSTRUCTOR =====================
 
+    public static NamespacedKey SPAWNER_ITEM_KEY;
+
     public ItemSpawnerManager(Plugin plugin) {
         this.plugin = plugin;
+        SPAWNER_ITEM_KEY = new NamespacedKey(plugin, "spawner_item");
         this.dataFile = new File(plugin.getDataFolder(), "spawners.yml");
         loadData();
         startSpawnerTask();
@@ -534,13 +538,23 @@ public class ItemSpawnerManager implements Listener {
     // ===================== HELPER =====================
 
     private ItemStack getDropItem(String type) {
+        ItemStack item = null;
         if ("skeleton".equals(type))
-            return new ItemStack(Material.BONE, 1);
-        if ("blaze".equals(type))
-            return new ItemStack(Material.BLAZE_ROD, 1);
-        if ("iron_golem".equals(type))
-            return new ItemStack(Material.IRON_INGOT, 1);
-        return null;
+            item = new ItemStack(Material.BONE, 1);
+        else if ("blaze".equals(type))
+            item = new ItemStack(Material.BLAZE_ROD, 1);
+        else if ("iron_golem".equals(type))
+            item = new ItemStack(Material.IRON_INGOT, 1);
+        
+        if (item != null) {
+            ItemMeta meta = item.getItemMeta();
+            if (meta != null) {
+                meta.setLore(Arrays.asList("§c§lVật phẩm từ lồng (Không thể bán)"));
+                meta.getPersistentDataContainer().set(SPAWNER_ITEM_KEY, PersistentDataType.BYTE, (byte) 1);
+                item.setItemMeta(meta);
+            }
+        }
+        return item;
     }
 
     private String getTypeName(String type) {

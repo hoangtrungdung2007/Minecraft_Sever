@@ -12,7 +12,10 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.plugin.Plugin;
+import java.util.HashMap;
 
 public class SellManager implements CommandExecutor, Listener {
 
@@ -40,23 +43,45 @@ public class SellManager implements CommandExecutor, Listener {
         Inventory inv = event.getInventory();
         
         double totalEarned = 0;
+        boolean hasSpawnerItem = false;
         
         for (int i = 0; i < inv.getSize(); i++) {
             ItemStack item = inv.getItem(i);
             if (item != null && item.getType() != Material.AIR) {
+                if (isSpawnerItem(item)) {
+                    hasSpawnerItem = true;
+                    HashMap<Integer, ItemStack> leftOver = player.getInventory().addItem(item);
+                    for (ItemStack left : leftOver.values()) {
+                        player.getWorld().dropItemNaturally(player.getLocation(), left);
+                    }
+                    inv.setItem(i, null);
+                    continue;
+                }
                 double unitPrice = getUnitPrice(item);
                 totalEarned += unitPrice * item.getAmount();
                 inv.setItem(i, null); // Xóa đồ vì đã bán
             }
         }
         
+        if (hasSpawnerItem) {
+            player.sendMessage("§cVật phẩm từ lồng không thể bán lại cho server! Đã hoàn trả vào túi của bạn.");
+        }
+        
         if (totalEarned > 0) {
             economyManager.addBalance(player, totalEarned);
             player.sendMessage("§aBạn đã bán các vật phẩm và nhận được §f" + String.format("%,.1f", totalEarned) + " Tiền!");
-        } else {
+        } else if (!hasSpawnerItem) {
             player.sendMessage("§eBạn không bán gì cả.");
         }
     }
+
+    private boolean isSpawnerItem(ItemStack item) {
+        if (item == null || !item.hasItemMeta()) return false;
+        ItemMeta meta = item.getItemMeta();
+        if (meta == null) return false;
+        return meta.getPersistentDataContainer().has(ItemSpawnerManager.SPAWNER_ITEM_KEY, PersistentDataType.BYTE);
+    }
+
 
     private double getUnitPrice(ItemStack item) {
         Material type = item.getType();

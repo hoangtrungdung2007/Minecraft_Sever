@@ -100,63 +100,41 @@ public class RaidManager implements CommandExecutor, Listener {
         world.setStorm(true);
         world.setThundering(true);
 
-        // 2. Tạo Boss Bar hiển thị tiến trình Raid
+        // 2. Tạo Boss Bar hiển thị đếm ngược 10 giây
         if (raidBossBar != null) raidBossBar.removeAll();
-        raidBossBar = Bukkit.createBossBar("§4§l⚔ CUỘC ĐỘT KÍCH CỦA QUỶ VƯƠNG ⚔ §c(5/5 Boss)", BarColor.RED, BarStyle.SEGMENTED_10);
+        raidBossBar = Bukkit.createBossBar("§e§l⏳ CUỘC ĐỘT KÍCH SẼ BẮT ĐẦU SAU §c§l10 §e§lGIÂY...", BarColor.YELLOW, BarStyle.SEGMENTED_10);
         raidBossBar.setProgress(1.0);
         for (Player p : world.getPlayers()) {
             raidBossBar.addPlayer(p);
         }
 
-        for (int i = 0; i < 5; i++) {
-            // Spawn random offset
-            double offsetX = (random.nextDouble() - 0.5) * 20;
-            double offsetZ = (random.nextDouble() - 0.5) * 20;
-            Location spawnLoc = raidCenter.clone().add(offsetX, 1, offsetZ);
-
-            int r = random.nextInt(3);
-            if (r == 0) {
-                Zombie zombie = (Zombie) world.spawnEntity(spawnLoc, EntityType.ZOMBIE);
-                plugin.getBossZombieManager().makeBossZombie(zombie);
-                zombie.setRemoveWhenFarAway(false);
-                raidBosses.add(zombie.getUniqueId());
-            } else if (r == 1) {
-                Skeleton skeleton = (Skeleton) world.spawnEntity(spawnLoc, EntityType.SKELETON);
-                plugin.getBossSkeletonManager().makeBossSkeleton(skeleton);
-                skeleton.setRemoveWhenFarAway(false);
-                raidBosses.add(skeleton.getUniqueId());
-            } else {
-                Spider spider = (Spider) world.spawnEntity(spawnLoc, EntityType.SPIDER);
-                plugin.getBossSpiderManager().makeBossSpider(spider);
-                spider.setRemoveWhenFarAway(false);
-                raidBosses.add(spider.getUniqueId());
-            }
-        }
-
         Bukkit.broadcastMessage("§c§l=================================");
-        Bukkit.broadcastMessage("§4§l⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH ĐÃ BẮT ĐẦU ⚠");
-        Bukkit.broadcastMessage("§eMột nhóm 5 Quỷ Vương đã xuất hiện tại:");
+        Bukkit.broadcastMessage("§4§l⚠ CẢNH BÁO: CUỘC ĐỘT KÍCH SẮP BẮT ĐẦU ⚠");
+        Bukkit.broadcastMessage("§eMột nhóm 5 Quỷ Vương đang tiến đến vị trí:");
         Bukkit.broadcastMessage("§fX: " + raidCenter.getBlockX() + ", Y: " + raidCenter.getBlockY() + ", Z: " + raidCenter.getBlockZ());
         Bukkit.broadcastMessage("§c§l🛑 KHU VỰC ĐÃ BỊ PHONG TỎA! GIỚI HẠN BÁN KÍNH 50 BLOCK & ĐỘ CAO 50 BLOCK!");
         Bukkit.broadcastMessage("§aTham gia tiêu diệt để nhận thưởng: §6§l+10,000,000 Tiền & +100 Level!");
         Bukkit.broadcastMessage("§c§l=================================");
 
         for (Player p : Bukkit.getOnlinePlayers()) {
-            p.playSound(p.getLocation(), Sound.ENTITY_ENDER_DRAGON_GROWL, 1.0f, 0.8f);
-            p.sendTitle("§4§lRAID BOSS", "§c5 Quỷ Vương Đã Xuất Hiện!", 10, 70, 20);
+            p.playSound(p.getLocation(), Sound.ENTITY_WITHER_SPAWN, 1.0f, 0.8f);
+            p.sendTitle("§4§lRAID BOSS", "§cCuộc Đột Kích Sẽ Bắt Đầu Sau 10 Giây!", 10, 70, 20);
         }
 
-        // 3. Task định kỳ: Sét đánh, giữ boss trong vùng, hiển thị tường mờ mờ và cập nhật BossBar
+        // 3. Task định kỳ: Đếm ngược 10 giây, sau đó triệu hồi boss, sét đánh, giữ boss trong vùng, hiển thị tường mờ mờ và cập nhật BossBar
         if (raidTask != null) raidTask.cancel();
         raidTask = new BukkitRunnable() {
-            int tickCounter = 0;
+            int ticks = 0;
+            int countdown = 10;
+            boolean bossesSpawned = false;
+
             @Override
             public void run() {
                 if (!isRaidActive || raidCenter == null) {
                     this.cancel();
                     return;
                 }
-                tickCounter++;
+                ticks++;
 
                 // Giữ trời luôn tối trong suốt quá trình Raid
                 if (world.getTime() < 14000 || world.getTime() > 22000) {
@@ -174,34 +152,53 @@ public class RaidManager implements CommandExecutor, Listener {
                     }
                 }
 
-                // A. Sét đánh ngẫu nhiên và tỉ lệ trúng người chơi (mỗi 30 ticks = 1.5 giây)
-                if (tickCounter % 3 == 0) {
-                    double rX = (random.nextDouble() - 0.5) * 60;
-                    double rZ = (random.nextDouble() - 0.5) * 60;
-                    Location lightningLoc = raidCenter.clone().add(rX, 0, rZ);
-                    world.strikeLightningEffect(world.getHighestBlockAt(lightningLoc).getLocation());
+                if (!bossesSpawned) {
+                    // Đang trong giai đoạn đếm ngược 10 giây (mỗi 2 ticks của task = 1 giây)
+                    if (ticks % 2 == 0) {
+                        countdown--;
+                        if (countdown > 0) {
+                            if (raidBossBar != null) {
+                                raidBossBar.setTitle("§e§l⏳ CUỘC ĐỘT KÍCH SẼ BẮT ĐẦU SAU §c§l" + countdown + " §e§lGIÂY...");
+                                raidBossBar.setProgress((double) countdown / 10.0);
+                            }
+                            for (Player p : world.getPlayers()) {
+                                p.playSound(p.getLocation(), Sound.BLOCK_NOTE_BLOCK_PLING, 1.0f, 1.0f);
+                            }
+                        } else {
+                            bossesSpawned = true;
+                            spawnRaidBosses(player, world);
+                        }
+                    }
+                } else {
+                    // Giai đoạn Raid chính thức sau khi Boss đã xuất hiện
+                    // A. Sét đánh ngẫu nhiên và tỉ lệ trúng người chơi (mỗi 30 ticks = 1.5 giây)
+                    if (ticks % 3 == 0) {
+                        double rX = (random.nextDouble() - 0.5) * 60;
+                        double rZ = (random.nextDouble() - 0.5) * 60;
+                        Location lightningLoc = raidCenter.clone().add(rX, 0, rZ);
+                        world.strikeLightningEffect(world.getHighestBlockAt(lightningLoc).getLocation());
 
-                    if (random.nextDouble() < 0.25) {
-                        for (Player p : world.getPlayers()) {
-                            if (p.isDead() || !p.isValid()) continue;
-                            if (p.getLocation().distanceSquared(raidCenter) <= 2500.0) { // Trong bán kính 50 block
-                                if (random.nextBoolean()) {
-                                    world.strikeLightning(p.getLocation());
-                                    // Đã tắt thông báo sét đánh trúng người chơi
-                                    break;
+                        if (random.nextDouble() < 0.25) {
+                            for (Player p : world.getPlayers()) {
+                                if (p.isDead() || !p.isValid()) continue;
+                                if (p.getLocation().distanceSquared(raidCenter) <= 2500.0) { // Trong bán kính 50 block
+                                    if (random.nextBoolean()) {
+                                        world.strikeLightning(p.getLocation());
+                                        break;
+                                    }
                                 }
                             }
                         }
                     }
-                }
 
-                // B. Giữ Boss không được ra khỏi vùng Raid (bán kính 50, độ cao 50)
-                for (UUID bossUuid : raidBosses) {
-                    Entity boss = Bukkit.getEntity(bossUuid);
-                    if (boss != null && boss.isValid() && !boss.isDead()) {
-                        double distSq = boss.getLocation().distanceSquared(raidCenter);
-                        if (distSq > 50.0 * 50.0 || boss.getLocation().getY() > raidCenter.getY() + 50.0) {
-                            boss.teleport(raidCenter.clone().add(0, 1, 0));
+                    // B. Giữ Boss không được ra khỏi vùng Raid (bán kính 50, độ cao 50)
+                    for (UUID bossUuid : raidBosses) {
+                        Entity boss = Bukkit.getEntity(bossUuid);
+                        if (boss != null && boss.isValid() && !boss.isDead()) {
+                            double distSq = boss.getLocation().distanceSquared(raidCenter);
+                            if (distSq > 50.0 * 50.0 || boss.getLocation().getY() > raidCenter.getY() + 50.0) {
+                                boss.teleport(raidCenter.clone().add(0, 1, 0));
+                            }
                         }
                     }
                 }
@@ -237,6 +234,65 @@ public class RaidManager implements CommandExecutor, Listener {
                 }
             }
         }.runTaskTimer(plugin, 10L, 10L); // Chạy mỗi 0.5 giây (10 ticks)
+    }
+
+    private void spawnRaidBosses(Player player, World world) {
+        if (!isRaidActive || raidCenter == null) return;
+
+        if (raidBossBar != null) {
+            raidBossBar.setTitle("§4§l⚔ CUỘC ĐỘT KÍCH CỦA QUỶ VƯƠNG ⚔ §c(5/5 Boss)");
+            raidBossBar.setColor(BarColor.RED);
+            raidBossBar.setProgress(1.0);
+        }
+
+        Location baseLoc = (player != null && player.isOnline() && player.getWorld() == world) ? player.getLocation() : raidCenter;
+
+        for (int i = 0; i < 5; i++) {
+            Location spawnLoc = null;
+            // Thử tìm vị trí cách xa người chơi 20 block và nằm trong vùng phong tỏa
+            for (int attempt = 0; attempt < 10; attempt++) {
+                double angle = random.nextDouble() * 2 * Math.PI;
+                double offsetX = 20.0 * Math.cos(angle);
+                double offsetZ = 20.0 * Math.sin(angle);
+                Location loc = baseLoc.clone().add(offsetX, 1, offsetZ);
+                if (loc.distanceSquared(raidCenter) <= 48.0 * 48.0) {
+                    spawnLoc = loc;
+                    break;
+                }
+            }
+            if (spawnLoc == null) {
+                // Nếu người chơi ở quá xa tâm khiến các hướng đều vượt quá giới hạn, chọn hướng hướng về phía tâm raidCenter
+                Vector dirToCenter = raidCenter.toVector().subtract(baseLoc.toVector()).normalize();
+                spawnLoc = baseLoc.clone().add(dirToCenter.multiply(20.0)).add(0, 1, 0);
+            }
+
+            int r = random.nextInt(3);
+            if (r == 0) {
+                Zombie zombie = (Zombie) world.spawnEntity(spawnLoc, EntityType.ZOMBIE);
+                plugin.getBossZombieManager().makeBossZombie(zombie);
+                zombie.setRemoveWhenFarAway(false);
+                raidBosses.add(zombie.getUniqueId());
+            } else if (r == 1) {
+                Skeleton skeleton = (Skeleton) world.spawnEntity(spawnLoc, EntityType.SKELETON);
+                plugin.getBossSkeletonManager().makeBossSkeleton(skeleton);
+                skeleton.setRemoveWhenFarAway(false);
+                raidBosses.add(skeleton.getUniqueId());
+            } else {
+                Spider spider = (Spider) world.spawnEntity(spawnLoc, EntityType.SPIDER);
+                plugin.getBossSpiderManager().makeBossSpider(spider);
+                spider.setRemoveWhenFarAway(false);
+                raidBosses.add(spider.getUniqueId());
+            }
+        }
+
+        Bukkit.broadcastMessage("§c§l=================================");
+        Bukkit.broadcastMessage("§4§l⚠ 5 QUỶ VƯƠNG ĐÃ XUẤT HIỆN! CUỘC ĐỘT KÍCH CHÍNH THỨC BẮT ĐẦU! ⚠");
+        Bukkit.broadcastMessage("§c§l=================================");
+
+        for (Player p : Bukkit.getOnlinePlayers()) {
+            p.playSound(p.getLocation(), Sound.ENTITY_ENDER_DRAGON_GROWL, 1.0f, 0.8f);
+            p.sendTitle("§4§lRAID BOSS", "§c5 Quỷ Vương Đã Xuất Hiện!", 10, 70, 20);
+        }
     }
 
     private void stopRaid() {
